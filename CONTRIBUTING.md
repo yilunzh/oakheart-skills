@@ -5,7 +5,7 @@
 ## Make a change
 
 1. Fetch current `main`, preserve any local work, and start a branch for one change. Record the baseline commit and installed version if the feedback came from a running skill.
-2. Read the affected skill, its dependencies and the learning-loop policy. Explain the problem, expected improvement, counterexample and possible regressions. For learned changes, retain the candidate and evidence in the existing ledger.
+2. Read the affected skill, its dependencies and the learning-loop policy. Explain the problem, expected improvement, counterexample and possible regressions. For learned changes, retain the candidate and evidence with the current task or authorized project.
 3. Edit source or adapters. For a new skill, add a folder whose name matches its SKILL.md frontmatter. Add a representative trigger case and a non-trigger case to the evaluation plan.
 4. Run `python3 sync.py manifest` after reviewing intentional source edits. This updates the inventory, including added or removed skills. It is a bookkeeping command, not approval.
 5. Run `python3 build.py` and `python3 check.py`. Review the generated adaptation diff. Compare actual baseline and candidate outputs when behavior changes; record each platform tested and any gaps.
@@ -21,13 +21,13 @@ Pull the approved release with `git pull --ff-only`. If your checkout has change
 
 If you improved an installed copy, save the diff against its recorded release, apply the intended change to shared source or the appropriate adapter on a branch, and complete the same review. Preserve that local work before restoring the managed installation to its recorded bytes. Then update. Installed copies never silently become a second source of truth.
 
-`current` means installed files match this checkout's generated release. Fetch first to learn whether GitHub has a newer release. A file receipt does not prove the model invoked that version: verify the version, trigger and non-trigger behavior in a fresh session and record the result in the existing ledger.
+`current` means installed files match this checkout's generated release. Fetch first to learn whether GitHub has a newer release. A file receipt does not prove the model invoked that version: verify the version, trigger and non-trigger behavior in a fresh session and record the result with the current task or authorized project.
 
 ## ChatGPT Work and learning history
 
 ChatGPT Work personal skills are managed separately from local Codex installations. Apply an authorized release through Skill Creator, one skill at a time, preserving host metadata and concurrent edits. Verify saved bytes and activation. The local installer deliberately rejects managed personal-skill paths. GitHub updates do not update this account automatically.
 
-The single evidence ledger remains `yilunzh/personal-os`, branch `feature/skill-learning-loop`, under `learning-loop/`. Read its current WORKFLOW.md and state.json. Its native scheduled runner rules and promotion gates remain in force. This shared packaging setup does not authorize Claude to run the existing ChatGPT scheduler or alter that ledger policy. Cross-platform trials must be described by their actual runtime and access; missing independence means exploratory evidence, not promotion.
+Learning-loop works with task-local evidence and optional project records. No external repository or ledger configuration is required. Preserve its bundled evidence, authorization and promotion requirements. Existing scheduled jobs and historical records are separate; this package neither changes nor provisions them.
 
 For rollback, revert the affected source/adapter change through review, publish a new patch version and update the affected installation. Preserve unrelated later improvements and all failed-candidate evidence.
 

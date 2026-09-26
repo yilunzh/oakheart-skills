@@ -24,10 +24,20 @@ Version 0.1.1: removed the optional skill and regenerated distributions. Structu
 - Reran all 34 learning-loop and agency helper tests on the Codex distribution: passed.
 - Twelve new infrastructure tests passed: initial install/idempotence, local edit refusal and unrelated preservation, unmanaged name collision, Claude plugin installation, missing-file refusal, failed-update rollback, symlink/managed-host refusal malformed receipt paths, unregistered source additions, interrupted updates, edits during staging and concurrent installers (some tests cover multiple cases).
 - No model benchmark or native Codex/Claude activation was executed. Local temporary installation tests are not account installation.
-- Existing learning-loop ledger, scheduled jobs and promotion policy were read but not modified. This is authorized infrastructure bootstrap, not evidence of a learned behavior improvement.
+- At version 0.2.0, existing learning records, scheduled jobs and promotion policy were read but not modified. This is authorized infrastructure bootstrap, not evidence of a learned behavior improvement.
 
 Independent infrastructure review found and verified fixes for unregistered source additions, failed rollback cleanup, interruption recovery, and concurrent edits during staging. Its final bounded verification passed all 12 regression tests with no remaining blocker in that scope.
 
 ## Project-context cleanup — version 0.2.1
 
 Removed AutoNation-specific strategy/application context and PTC prospect/booking constraints from reusable references. Preserved the removed text as separate private project notes outside the package. General working preferences and motorsport research guidance remain. Client context is retrieved only for the relevant task. This is a user-directed content correction, not a claimed learned behavioral improvement or native runtime benchmark.
+
+## Portable runtime and evaluation repairs — version 0.3.0
+
+- Removed the fixed external-repository/ledger dependency from learning-loop, all generated runtime references and contribution documentation. Retained the skill, historical records and explicit evidence/promotion safeguards. Existing schedules were not modified.
+- Made runtime loading conditional; clarified copy and strategy triggers; replaced vendor-specific commercial dependencies with available capabilities; aligned strategy review to task size and two defect-driven cycles.
+- Added fresh experiment and grading IDs, frozen plugin/task/harness snapshots, model and CLI provenance, raw traces and error retention, invalid-run exclusion, expected-pair accounting, order-sensitive verdicts and unsupported-claim checks.
+- All 56 local tests passed: 34 existing helper, 12 installer, 10 evaluation-harness tests. The harness integration test used a mock CLI, not a model.
+- Independent static review verified fixes for missing judgments, malformed streams and judging implementation identity. No remaining blocker within that review's scope.
+- One fresh-agent exercise produced correct six-month pricing economics and a plain email without unsupported customer claims. This was a bounded exploratory check, not a matched benchmark or evidence of Claude performance.
+- No Claude executable is available in this build environment. Native routing, reference access, reviewer execution, output quality and current performance remain untested.

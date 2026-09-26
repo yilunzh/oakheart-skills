@@ -1,9 +1,9 @@
 ---
 name: copy-reviewer
-description: Draft, review or rewrite websites, interfaces, emails, presentations, PRDs, business documents and articles for their purpose, audience and medium. Use for initial writing and copy that feels AI-generated, generic or unclear. Preserve review-only and rewrite scope; pair with specialist and artifact skills when relevant.
+description: Draft, review, rewrite or tighten emails, messages, website copy, articles, presentations and PRDs. Use for requests such as rewrite this email, review this copy, make this clearer, preserve my voice or remove AI-sounding language. Own wording, meaning and audience fit; pair with available artifact tools for files and layout. Respect review-only scope.
 ---
 
-Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
+Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 
 
 # Content Writing and Copy Review
@@ -36,7 +36,7 @@ For multiple audiences or deliverables, adapt the brief for each. Keep it intern
 
 Use the dominant medium and purpose; load a second reference only for a distinct requested surface. For an unfamiliar format, apply the brief without forcing a listed template.
 
-For customer-facing pitches or proposals requiring commercial reasoning, use `sales-pitch-reviewer` and the applicable Sales workflow alongside this skill. Sales owns buyer logic and commercial evidence; this skill owns audience/medium adaptation and language. Share one brief, load each skill once and do not recursively hand work back. Do not escalate ordinary wording edits or internal updates into a sales engagement. Use artifact skills for requested file production and visual validation.
+For customer-facing pitches or proposals requiring commercial reasoning, use `sales-pitch-reviewer` and available commercial research tools when needed alongside this skill. Pitch review owns buyer logic and commercial evidence; this skill owns audience/medium adaptation and language. Share one brief, load each skill once and do not recursively hand work back. Do not escalate ordinary wording edits or internal updates into a sales engagement. Use artifact skills for requested file production and visual validation.
 
 ## Draft from substance and voice
 

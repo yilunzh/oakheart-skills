@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'Oakheart_Claude_Skills.zip'
 
 def members():
-    ignored={'.git','__pycache__','.dist-build','.dist-previous'}
+    ignored={'.git','__pycache__','.dist-build','.dist-previous','eval-results'}
     return {('oakheart-skills/'+p.relative_to(ROOT).as_posix()): p.read_bytes()
             for p in sorted(ROOT.rglob('*')) if p.is_file() and p != OUT
             and not ignored.intersection(p.relative_to(ROOT).parts)

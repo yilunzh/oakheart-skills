@@ -2,7 +2,7 @@
 
 Five reusable workflows for writing, business strategy, sales, software delivery, and improving how you work with AI. One shared source for Codex, Claude Code, Claude chat, and Cowork.
 
-**Version 0.2.1 · Ready to try.** Package and installer checks pass. Native activation and task quality still need testing in each environment.
+**Version 0.3.0 · Ready to try.** Package and installer checks pass. Native activation and task quality still need testing in each environment.
 
 [Download the package](./Oakheart_Claude_Skills.zip?raw=true)
 
@@ -71,9 +71,9 @@ Claude Code also gets a separate, read-only reviewer. It can inspect supplied fi
 
 ## What you’ll need to connect
 
-Skills carry the workflow instructions. Connectors, credentials, ChatGPT memories, project files, hosting, and scheduled jobs need separate setup. The original Sales, Sites, and Library plugins are not included; each skill’s `references/runtime.md` explains the available fallback and its limits.
+Skills carry the workflow instructions. Connectors, credentials, ChatGPT memories, project files, hosting, and scheduled jobs need separate setup. Host-specific services are not bundled. Conditional runtime guidance explains capability limits when those services are needed.
 
-The learning loop’s evidence and experiment history remain in [`personal-os`, on `feature/skill-learning-loop`](https://github.com/yilunzh/personal-os/tree/feature/skill-learning-loop/learning-loop). Connect that repository before using the loop to record or promote changes.
+The learning loop works with evidence supplied in the task. Save experiment records with the current project when needed; no external ledger or repository connection is required.
 
 ## Keep installations in sync
 
@@ -110,12 +110,16 @@ GitHub Actions verifies reproducible packages and helper tests on pushes and pul
 | `adapters/` | Host-specific tools, storage and review instructions |
 | `dist/` | Generated Codex skills, Claude plugin and chat ZIPs |
 | `dist/release.json` | Shared version, build identity and package hashes |
-| `evaluations/` | Evaluation procedure; private evidence stays in its existing ledger |
+| `evaluations/` | Evaluation procedure; private evidence stays with its authorized project |
 
 ## Testing status
 
-The package passed file-integrity and reference checks. The learning-loop and agency helpers passed 34 unit tests; 12 infrastructure tests cover conflicts, file preservation and failed-update recovery. See [the verification record](./SCRIPT_CHECKS.md) for scope and details.
+The package passed file-integrity and reference checks. The learning-loop and agency helpers passed 34 unit tests; 12 installer tests and 10 evaluation-harness tests cover updates, recovery, evidence capture and scoring integrity. See [the verification record](./SCRIPT_CHECKS.md) for scope and details.
 
 Next, run the skills on real tasks in Claude. Compare the finished work with a known baseline, checking factual accuracy, voice, missed requirements, and corrections needed. Independent review requires a separate execution; if the session cannot provide one, label the result as self-reviewed. Existing checks do not yet establish equivalent performance across platforms.
 
 Installation references: [Codex skills](https://learn.chatgpt.com/docs/build-skills) · [Claude plugins](https://code.claude.com/docs/en/plugins).
+
+## Evaluate changes in Claude
+
+The [evaluation harness](./evals/README.md) creates fresh, versioned experiments, retains raw execution evidence, and reports missing or blocked runs. It supports both no-plugin baselines and earlier-plugin comparisons. Local harness tests passed; a new native Claude comparison has not been run for this release.

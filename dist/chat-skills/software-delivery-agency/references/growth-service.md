@@ -2,7 +2,7 @@
 
 ## Agency prospecting
 
-Use Sales for research, qualification, discovery and proposals. Target measurable demand, capacity and viable scope alongside conversion opportunity. Prepare sourced prospects and tailored outreach without inventing relationships/results. Sending requires applicable authorization and recipient verification. Maintain pipeline from actual interactions and preserve commitments. Use Sales Pitch Reviewer for the opportunity story; model prices from explicit cost/time assumptions. Build case studies from consented measured results; prepare referral requests within scope.
+Use available commercial research tools for research, qualification, discovery and proposals. Target measurable demand, capacity and viable scope alongside conversion opportunity. Prepare sourced prospects and tailored outreach without inventing relationships/results. Sending requires applicable authorization and recipient verification. Maintain pipeline from actual interactions and preserve commitments. Use Sales Pitch Reviewer for the opportunity story; model prices from explicit cost/time assumptions. Build case studies from consented measured results; prepare referral requests within scope.
 
 ## Client demand
 
