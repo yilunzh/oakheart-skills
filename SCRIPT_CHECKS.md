@@ -27,3 +27,7 @@ Version 0.1.1: removed the optional skill and regenerated distributions. Structu
 - Existing learning-loop ledger, scheduled jobs and promotion policy were read but not modified. This is authorized infrastructure bootstrap, not evidence of a learned behavior improvement.
 
 Independent infrastructure review found and verified fixes for unregistered source additions, failed rollback cleanup, interruption recovery, and concurrent edits during staging. Its final bounded verification passed all 12 regression tests with no remaining blocker in that scope.
+
+## Project-context cleanup — version 0.2.1
+
+Removed AutoNation-specific strategy/application context and PTC prospect/booking constraints from reusable references. Preserved the removed text as separate private project notes outside the package. General working preferences and motorsport research guidance remain. Client context is retrieved only for the relevant task. This is a user-directed content correction, not a claimed learned behavioral improvement or native runtime benchmark.
