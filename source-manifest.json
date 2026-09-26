@@ -14,7 +14,7 @@
         "references/deliverables.md": "406e441a927f8c9136fbaa6def5b3306f1aa11fe0888e492c94e05c699bd5bba",
         "references/research-and-reasoning.md": "7242d99f555f0ae5f6b1f53acc51ffee0cd9fa8fd4a09bf7f581dbe74ad0d7d9",
         "references/review-rubric.md": "39ad571d3606df4e2c19d3dd20b8e3ac0390e0d9186a367a89af50bf87edfa00",
-        "references/working-preferences.md": "901247a36a380bfa9cc4ee30cbebfc4c4bddf8dff4edf1816c6284dbadc00b66"
+        "references/working-preferences.md": "ccc2c9199fb137d6b597f1008b93b9c9d5a2f05e79c290859453476cbe350e49"
       }
     },
     {
@@ -79,9 +79,9 @@
         "references/evaluation.md": "682afa5404de9881939fe23d667f3b249732c8a7a5447741c31ab83190574741",
         "references/growth-service.md": "db74b4d27a8706100dd5f211e68d5218de19681f2c25dfc5a2f9a8ca8372f80a",
         "references/measurement.md": "8b2fd083806abee35bc77e771ecbdbcfa5e4c50bcc240f9faa9b658d7b2154e2",
-        "references/niche.md": "5e70e1f423c513634635528a6465010aacb7c827ec88e242ac2386484d69196e",
+        "references/niche.md": "68bf9e3eda16fa3f9fba283144dd90917b434d23555dfb334fd7ba7945c0a806",
         "references/operating.md": "263c0d49ade38bb23b6ba6595c3d834e8512587ef1da5ba920a7c4b27ca4c9ff",
-        "references/research-design.md": "9a7efdad91d730300d4928a6f060fe85ade48797d8ae16e488f7bc78ce604e11",
+        "references/research-design.md": "9c4214fc2bd68fca32f44c62e962ba6271be597af4dd7afb05aaec88d633ede3",
         "scripts/agency_checks.py": "40d530c88d0cabe8c33d84c62ade0fda1ebfb700762e133c6006d6379a2cb0e1",
         "scripts/test_agency_checks.py": "89b9630629f259757ee019e1f6399ba960e3b330b108376b86e96cdb64a5767c"
       }

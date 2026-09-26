@@ -24,7 +24,3 @@ Use approved credentials, genuine testimony, relevant footage and specific progr
 
 - https://www.skipbarber.com/faq illustrates program-specific prerequisites and dates/cars varying by venue. Recheck before using operator facts.
 - https://rsrnurburg.com/track-insurance-and-accidents/ illustrates differing responsibilities for deposits, damage excess and separately arranged insurance. This European operator is not a US policy template.
-
-## PTC context
-
-PTC is a potential design partner, not a signed client or measured win. User preferences: sell program choice visibly, explain track differentiation, include relevant onboards and supported upsells. The PTC concept is intended to replace booking; TrackRabbit may guide required information but must not be integrated directly. Keep that constraint PTC-specific; establish other clients’ integration choices separately.

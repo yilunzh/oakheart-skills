@@ -2,7 +2,7 @@
 
 Use Sales for commercial work. Qualify owner access, observed customer friction, transaction economics, fulfillment capacity, feasible scope and measurable demand. Cite source/date. Public traffic estimates are not experiment baselines. Return prospect fit and guarantee eligibility separately as yes/no/unknown with evidence gaps. A weak-looking site establishes neither.
 
-Inspect the incumbent and actual buying path. Separate observed behavior from hypotheses and inaccessible states. Use grounded notes, reviews and owner interviews for buyer language and objections; preserve provenance. Competitor claims are not client facts. Read niche.md for useful research dimensions.
+Inspect the incumbent and actual buying path. Separate observed behavior from hypotheses and inaccessible states. Use grounded notes, reviews and owner interviews for buyer language and objections; preserve provenance. Competitor claims are not client facts. For motorsport clients, read niche.md for useful research dimensions. Retrieve client-specific facts and integration constraints from that client’s current project brief; do not carry them into unrelated engagements.
 
 Deliver a concise brief: buyer/task, alternatives, verified advantages, objections/proof, constraints, incumbent strengths, opportunities and missing facts. Synthetic personas are hypotheses, not customer research.
 
