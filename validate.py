@@ -18,7 +18,7 @@ def validate():
             assert hashlib.sha256((ROOT/'source'/record['name']/rel).read_bytes()).hexdigest() == digest
             verified += 1
     skills = list((ROOT/'dist').glob('*/skills/*/SKILL.md')) + list((ROOT/'dist/chat-skills').glob('*/SKILL.md'))
-    assert len(skills) == 12, len(skills)
+    assert len(skills) == 10, len(skills)
     links = 0
     for skill in skills:
         text = skill.read_text()
@@ -39,13 +39,13 @@ def validate():
         for script in skill.parent.rglob('*.py'):
             ast.parse(script.read_text())
     plugins = list((ROOT/'dist').glob('*/.claude-plugin/plugin.json'))
-    assert len(plugins) == 2
+    assert len(plugins) == 1
     for p in plugins:
         data = json.loads(p.read_text())
         assert re.fullmatch('[a-z0-9-]+', data['name'])
-        assert data['version'] == '0.1.0'
+        assert data['version'] == '0.1.1'
     archives = list((ROOT/'dist/chat-uploads').rglob('*.zip'))
-    assert len(archives) == 6
+    assert len(archives) == 5
     for p in archives:
         with zipfile.ZipFile(p) as z:
             assert z.testzip() is None
@@ -57,7 +57,7 @@ def validate():
             assert all(z.read(name) == data for name,data in expected.items()), f'Archive content drift: {p}'
     report = {'source_files_hash_verified':verified,'generated_skill_folders':len(skills),
               'relative_links_verified':links,'individual_upload_archives':len(archives),
-              'plugin_manifests_json_checked':2,
+              'plugin_manifests_json_checked':1,
               'claude_cli_validation':'not_run_cli_unavailable',
               'claude_import_and_behavior':'not_tested',
               'real_project_parity':'pending_source_artifacts_and_claude_execution'}

@@ -2,9 +2,9 @@
 
 This is a portability adaptation of a personal skill snapshot, not proof of equivalent Claude behavior. Follow the host's tool, permission, and instruction rules. Historical test results in bundled references describe the source workflow, not tests performed in Claude.
 
-Read supporting paths relative to this skill's directory. Run bundled scripts from that directory, with Python 3, after inspecting their inputs. The family-crest inspector additionally needs Pillow. Never interpret OpenAI UI metadata as Claude configuration.
+Read supporting paths relative to this skill's directory. Run bundled scripts from that directory, with Python 3, after inspecting their inputs. Never interpret OpenAI UI metadata as Claude configuration.
 
-Resolve companion skills by their frontmatter name among installed skills; plugin names may be namespaced. Load each needed companion once and avoid circular handoffs. The main pack includes copy-reviewer, sales-pitch-reviewer, business-strategy-copilot, software-delivery-agency, and learning-loop. Family-crest-studio is an optional separate candidate package.
+Resolve companion skills by their frontmatter name among installed skills; plugin names may be namespaced. Load each needed companion once and avoid circular handoffs. The main pack includes copy-reviewer, sales-pitch-reviewer, business-strategy-copilot, software-delivery-agency, and learning-loop.
 
 ## Capability mapping
 
@@ -13,7 +13,6 @@ Resolve companion skills by their frontmatter name among installed skills; plugi
 - **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 - **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
 - **Scheduling:** Importing skills creates no recurring jobs. Existing ChatGPT automations stay separate. Scheduling in Claude requires an available scheduler and a verified creation result; do not create duplicate jobs merely to mirror this pack.
-- **Images:** Family-crest visual creation and editing require an available image-generation/editing capability. A prompt, SVG sketch, or text description is not a completed faithful image edit.
 
 ## Skill maintenance
 

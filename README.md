@@ -1,8 +1,8 @@
-# Oakheart skills for Claude — portability preview v0.1.0
+# Oakheart skills for Claude — portability preview v0.1.1
 
 [Download the complete package](./Oakheart_Claude_Skills.zip) · Individual skill ZIPs are in [dist/chat-uploads](./dist/chat-uploads).
 
-This package exports six personal skills from the 2026-09-26 snapshot. It includes complete original skill folders, reproducible adaptations, individual Claude chat/Cowork ZIPs, and Claude Code plugins. Your existing ChatGPT skills have not been changed.
+This package exports five personal skills from the 2026-09-26 snapshot. It includes complete original skill folders, reproducible adaptations, individual Claude chat/Cowork ZIPs, and Claude Code plugins. Your existing ChatGPT skills have not been changed.
 
 The package has not been installed or behaviorally tested in Claude. It is not a claim of equivalent performance, automatic synchronization, or a running background service.
 
@@ -27,12 +27,6 @@ claude --plugin-dir ./dist/oakheart
 
 This loads the local plugin for that launch; it is not a permanent account installation. In that session, check `/skills` and `/agents`. Try `/oakheart:copy-reviewer` with a real draft. The plugin includes a read-only artifact-reviewer; browser and rendering checks require separate available tools.
 
-Optional crest work can be loaded alongside it:
-
-```bash
-claude --plugin-dir ./dist/oakheart --plugin-dir ./dist/oakheart-optional-crest
-```
-
 Use either an account-synced copy or this local plugin for the same workflow; avoid enabling duplicate versions. This package does not configure permissions, MCP servers, credentials, hooks, or deployment services.
 
 ## Included skills
@@ -44,13 +38,12 @@ Use either an account-synced copy or this local plugin for the same workflow; av
 | business-strategy-copilot | Main | Research and document tools depend on the Claude environment. |
 | software-delivery-agency | Main | Current source and learning ledger identify it as active. Sites/analytics/vendor connections need separate access. |
 | learning-loop | Main | Python checker included. Existing external ledger retained by reference; no schedules or history migrated. |
-| family-crest-studio | Optional | Source folder is active but metadata explicitly says candidate v0.2.1. Kept separate so importing the main pack does not silently promote it. Image tooling required for visual work. |
 
 No `uninstalled/` skills were present in the inspected personal-skills checkout. Held and archived learning candidates live separately in the existing evidence repository and have not been copied into active packages. The archived broader agency proposal is distinct from the current active agency skill.
 
 ## What transfers and what does not
 
-All 55 original files across the six custom skill folders are preserved under `source/`, with SHA-256 hashes in `source-manifest.json`. Generated packages omit OpenAI UI metadata and add runtime instructions; exact replacements are defined in `build.py`, with a generated diff under `dist/`.
+All 44 original files across the five custom skill folders are preserved under `source/`, with SHA-256 hashes in `source-manifest.json`. Generated packages omit OpenAI UI metadata and add runtime instructions; exact replacements are defined in `build.py`, with a generated diff under `dist/`.
 
 Provider/plugin skills—including Sites, Library, Sales, native artifact tools, browser tooling, and Skill Creator—are not exported as if they were your custom implementations. Their dependencies have explicit mappings or limitations. ChatGPT memory, transcripts, project artifacts, credentials, external ledger contents, and scheduled jobs are not included. Historical evaluation results embedded in references remain historical, not evidence of Claude performance.
 
@@ -65,13 +58,13 @@ python3 build.py
 python3 validate.py
 ```
 
-This export includes a portable Git bundle containing the package source and generated distributions. To restore its local version history, from the directory containing the bundle:
+Clone the current repository to work with its version history:
 
 ```bash
-git clone Oakheart_Claude_Skills.bundle oakheart-skills
+git clone https://github.com/yilunzh/oakheart-skills.git
 ```
 
-This dedicated private repository, yilunzh/oakheart-skills, is the home for the skill source and Claude distribution packages on main. It contains no personal-os application code or inherited repository hooks. The accompanying ZIP preserves the original export snapshot and portable history; use this README for the current repository location. Review bounded changes and keep generated versions tied to the source version. Account uploads are distribution copies, not an automatic two-way sync.
+This dedicated private repository, yilunzh/oakheart-skills, is the home for the skill source and Claude distribution packages on main. It contains no personal-os application code or inherited repository hooks. The accompanying ZIP contains the current five-skill package; version history is retained in this repository. Review bounded changes and keep generated versions tied to the source version. Account uploads are distribution copies, not an automatic two-way sync.
 
 ## First validation in Claude
 
@@ -89,3 +82,4 @@ The real-project artifacts are not part of this export, so those comparisons rem
 - https://code.claude.com/docs/en/skills
 - https://code.claude.com/docs/en/plugins-reference
 - https://code.claude.com/docs/en/sub-agents
+

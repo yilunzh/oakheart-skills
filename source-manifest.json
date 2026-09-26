@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-09-26",
-  "scope": "Six personal skills. Provider/plugin skills and external project/evaluation records are not included.",
+  "scope": "Five personal skills. Provider/plugin skills and external project/evaluation records are not included.",
   "skills": [
     {
       "name": "copy-reviewer",
@@ -52,25 +52,6 @@
         "references/research-design.md": "9a7efdad91d730300d4928a6f060fe85ade48797d8ae16e488f7bc78ce604e11",
         "scripts/agency_checks.py": "40d530c88d0cabe8c33d84c62ade0fda1ebfb700762e133c6006d6379a2cb0e1",
         "scripts/test_agency_checks.py": "89b9630629f259757ee019e1f6399ba960e3b330b108376b86e96cdb64a5767c"
-      }
-    },
-    {
-      "name": "family-crest-studio",
-      "source_status": "active_path",
-      "metadata_status": "candidate",
-      "export_group": "optional",
-      "files": {
-        "CHANGELOG.md": "98e82dfb603ad5a5390a71e0c8e6923d7d92eed6724fde4d18f5c7a22f07b007",
-        "SKILL.md": "17bad7864bf409c2afa41bdde73e8d1fdf50a112dfc66f77d69d987ea0430f89",
-        "agents/openai.yaml": "d86b39c3866edbefe6881dedf4257c597c3c300078122a86ab2d31975b49a8a6",
-        "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
-        "assets/project-state.template.json": "4753f18d79fdccf6937c2ac606f67a6717b32b50eade169e1ea2af2574924c06",
-        "assets/vendor-brief.template.md": "79fdd203e9c5a9e2588520bd52b9a92a577d2e2b0bc58f45b0d506af2db80c85",
-        "evals/scenarios.json": "30cb14b57a6e9017f741e809edba9cb55c45b22dc21e8d84d7715a151ab05707",
-        "references/discovery.md": "965664ad4a5e83904a1a993c0ca82858e94d1d80cf115f2428ad6baf80931ead",
-        "references/production.md": "5095635d1907fb692a3ba432e2fbd659c89030b7ffd1e1e3cf2edf51b90f6ccd",
-        "references/review.md": "1744c53e0933a24ef838d106be0cb7bbc53474f697095dd70a774b803f1fa71d",
-        "scripts/inspect_artwork.py": "eb572aadc370fb455c85523a253f47200a3713975433eedc387691b08563a03c"
       }
     },
     {

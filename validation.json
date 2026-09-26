@@ -1,9 +1,9 @@
 {
-  "source_files_hash_verified": 55,
-  "generated_skill_folders": 12,
-  "relative_links_verified": 78,
-  "individual_upload_archives": 6,
-  "plugin_manifests_json_checked": 2,
+  "source_files_hash_verified": 44,
+  "generated_skill_folders": 10,
+  "relative_links_verified": 62,
+  "individual_upload_archives": 5,
+  "plugin_manifests_json_checked": 1,
   "claude_cli_validation": "not_run_cli_unavailable",
   "claude_import_and_behavior": "not_tested",
   "real_project_parity": "pending_source_artifacts_and_claude_execution"
