@@ -1,0 +1,39 @@
+{
+  "project_id": "family-crest-001",
+  "status": "discover",
+  "brief": {
+    "display_name": null,
+    "languages": [],
+    "people": [],
+    "pets": [],
+    "places": [],
+    "values": [],
+    "intended_use": null
+  },
+  "style_panorama": {
+    "presented_options": [],
+    "selected_lane": null,
+    "notes": []
+  },
+  "locked_master": {
+    "label": null,
+    "source_ref": null,
+    "source_path": null,
+    "sha256": null,
+    "approved_copy": [],
+    "locked_elements": []
+  },
+  "permitted_changes": [],
+  "review": {
+    "mode": "none",
+    "judge_run_ref": null,
+    "verdict": null,
+    "notes": []
+  },
+  "vendor_prep": {
+    "target_process": null,
+    "target_size": null,
+    "deliverables": [],
+    "open_questions": []
+  }
+}

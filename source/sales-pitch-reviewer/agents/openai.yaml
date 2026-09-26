@@ -1,0 +1,14 @@
+interface:
+  display_name: Sales Pitch Reviewer
+  short_description: Buyer-first pitches with clear copy and credible evidence
+  default_prompt: Use $sales-pitch-reviewer to improve this sales pitch, preserving
+    its evidence and the copy I have approved.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

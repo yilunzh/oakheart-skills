@@ -1,0 +1,17 @@
+interface:
+  display_name: family crest studio
+  short_description: Create and refine personal family crests, coats of arms, monograms,
+    and heirloom emblems. Use for discovering family symbolism, exploring broad style
+    directions, writing multilingual mottos, preserving a selected design, coordinating
+    independent quality review, or preparing crest artwork for an engraving vendor.
+    Ask targeted questions when meaningful information is missing; never turn production
+    cleanup into an unrequested redesign.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
