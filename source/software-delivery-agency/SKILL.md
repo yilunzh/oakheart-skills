@@ -17,9 +17,9 @@ Apply references to the client's actual scope. Racing-school guidance belongs to
 | --- | --- | --- |
 | Qualify, discover, position, design | [research-design.md](references/research-design.md); [niche.md](references/niche.md) for motorsport clients | Sales; Copy Reviewer |
 | Baseline, instrument, assess the guarantee | [measurement.md](references/measurement.md) | Available analytics/booking connectors |
-| Build, verify, release | [engineering-release.md](references/engineering-release.md) | Sites Building/Hosting for Sites projects; existing project workflow otherwise |
+| Build, verify, release | [engineering-release.md](references/engineering-release.md) | Existing project build/hosting workflow; see references/runtime.md for ChatGPT Sites limitations |
 | Prospecting, search/AI visibility, lead operations, support | [growth-service.md](references/growth-service.md) | Sales, Sales Pitch Reviewer, Copy Reviewer, connected apps |
-| Validate or improve workflows | [evaluation.md](references/evaluation.md) | Skill Creator; independent task execution |
+| Validate or improve workflows | [evaluation.md](references/evaluation.md) | Version-controlled skill maintenance; independent task execution |
 
 Discover installed dependencies by name and read their instructions before use. Do not duplicate them or substitute a mock for an unavailable integration.
 

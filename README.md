@@ -1,8 +1,8 @@
 # Oakheart Skills
 
-Five reusable workflows for writing, business strategy, sales, software delivery, and improving how you work with AI. Adapted from Yilun’s ChatGPT skills for use in Claude chat, Cowork, and Claude Code.
+Five reusable workflows for writing, business strategy, sales, software delivery, and improving how you work with AI. One shared source for Codex, Claude Code, Claude chat, and Cowork.
 
-**Version 0.1.1 · Ready to try.** Package checks pass; installation and task performance in Claude still need testing.
+**Version 0.2.0 · Ready to try.** Package and installer checks pass. Native activation and task quality still need testing in each environment.
 
 [Download the package](./Oakheart_Claude_Skills.zip?raw=true)
 
@@ -17,6 +17,28 @@ Five reusable workflows for writing, business strategy, sales, software delivery
 | **Learning loop** | Turn feedback into proposed skill improvements, test them, and track whether they help. |
 
 Each skill includes instructions and supporting references. Some also include Python tools for checking evidence or planning experiments.
+
+## Start with the shared repository
+
+```bash
+git clone https://github.com/yilunzh/oakheart-skills.git
+cd oakheart-skills
+```
+
+This private repository requires GitHub access. Both agents contribute here. Shared instructions live in `source/`; platform differences live in `adapters/`. Read [the contribution guide](./CONTRIBUTING.md) before making improvements.
+
+## Use in Codex CLI or IDE
+
+With Python 3 installed, run these commands from this repository:
+
+```bash
+python3 sync.py status --platform codex --target ~/.agents/skills
+python3 sync.py install --platform codex --target ~/.agents/skills
+```
+
+Check that the skills are available and try `$copy-reviewer`. For one project's installation, use `/path/to/project/.agents/skills` as the target instead. Avoid installing a second copy of a skill already supplied by another source.
+
+These commands manage local Codex files. ChatGPT Work's account skills use a separate installation process through Skill Creator; this repository cannot update those automatically.
 
 ## Use in Claude chat or Cowork
 
@@ -36,13 +58,12 @@ Upload each skill ZIP separately. The complete package contains multiple skills 
 With Git and Claude Code installed, and Claude signed in:
 
 ```bash
-git clone https://github.com/yilunzh/oakheart-skills.git
-cd oakheart-skills
-claude plugin validate ./dist/oakheart
-claude --plugin-dir ./dist/oakheart
+python3 sync.py install --platform code --target ~/oakheart-plugin
+claude plugin validate ~/oakheart-plugin
+claude --plugin-dir ~/oakheart-plugin
 ```
 
-This private repository requires GitHub access. If you downloaded the ZIP instead, open its extracted folder and run the last two commands.
+Run these commands from the repository or the extracted download. `~/oakheart-plugin` is a dedicated installation folder; choose another unused folder if needed.
 
 The plugin loads for that session. Check `/skills` and `/agents`, then invoke a skill such as `/oakheart:copy-reviewer`.
 
@@ -54,26 +75,47 @@ Skills carry the workflow instructions. Connectors, credentials, ChatGPT memorie
 
 The learning loop’s evidence and experiment history remain in [`personal-os`, on `feature/skill-learning-loop`](https://github.com/yilunzh/personal-os/tree/feature/skill-learning-loop/learning-loop). Connect that repository before using the loop to record or promote changes.
 
-## Updating the skills
+## Keep installations in sync
+
+After an approved change merges, pull the new release and rerun the installation command for each environment:
+
+```bash
+git pull --ff-only
+python3 sync.py status --platform codex --target ~/.agents/skills
+python3 sync.py install --platform codex --target ~/.agents/skills
+python3 sync.py install --platform code --target ~/oakheart-plugin
+```
+
+The installer records the version and exact file hashes. It preserves unrelated skills and stops if a managed copy has local edits. Reconcile those improvements into the shared source before updating. Claude chat and Cowork uploads still need to be replaced explicitly. Check the skill in a fresh session before calling it activated.
+
+`status` compares against your checkout, so pull first. There is no background watcher or automatic account-to-account sync.
+
+## Improve or add a skill
+
+Make a branch, edit `source/` or `adapters/`, and run:
+
+```bash
+python3 sync.py manifest
+python3 build.py
+python3 check.py
+```
+
+Submit the source and generated changes together for review. For releases, increment `VERSION` before building. Both agents read the same contribution rules through `AGENTS.md` and `CLAUDE.md`.
+
+GitHub Actions verifies reproducible packages and helper tests on pushes and pull requests, and provides downloadable build artifacts. Meaningful behavior changes also need actual output comparisons under the [evaluation process](./evaluations/README.md). Passing code checks does not approve a learned change.
 
 | Location | Purpose |
 | --- | --- |
-| `source/` | Original instructions and supporting files for the five skills |
-| `build.py` and `adapters/` | Changes needed to run them in Claude |
-| `dist/` | Generated plugin, upload ZIPs, and a diff of the adaptations |
-| `source-manifest.json` | File hashes that detect unexpected source changes |
-
-Make reviewed changes in the source or adapters. Update the manifest when intentionally changing source files, then rebuild and check the packages:
-
-```bash
-python3 build.py
-python3 validate.py
-```
-
-Upload the new skill ZIPs to Claude or load the rebuilt Code plugin. Updates do not sync automatically between ChatGPT, this repository, and Claude.
+| `source/` | Canonical skill instructions and supporting files |
+| `adapters/` | Host-specific tools, storage and review instructions |
+| `dist/` | Generated Codex skills, Claude plugin and chat ZIPs |
+| `dist/release.json` | Shared version, build identity and package hashes |
+| `evaluations/` | Evaluation procedure; private evidence stays in its existing ledger |
 
 ## Testing status
 
-The package passed file-integrity and reference checks. The learning-loop and agency helpers passed 34 unit tests. See [the verification record](./SCRIPT_CHECKS.md) for scope and details.
+The package passed file-integrity and reference checks. The learning-loop and agency helpers passed 34 unit tests; 12 infrastructure tests cover conflicts, file preservation and failed-update recovery. See [the verification record](./SCRIPT_CHECKS.md) for scope and details.
 
 Next, run the skills on real tasks in Claude. Compare the finished work with a known baseline, checking factual accuracy, voice, missed requirements, and corrections needed. Independent review requires a separate execution; if the session cannot provide one, label the result as self-reviewed. Existing checks do not yet establish equivalent performance across platforms.
+
+Installation references: [Codex skills](https://learn.chatgpt.com/docs/build-skills) · [Claude plugins](https://code.claude.com/docs/en/plugins).

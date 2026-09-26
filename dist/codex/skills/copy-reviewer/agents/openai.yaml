@@ -1,0 +1,14 @@
+interface:
+  display_name: Content Writer and Copy Reviewer
+  short_description: Write and review for purpose, audience and medium
+  default_prompt: Use $copy-reviewer to draft or review this content for its purpose,
+    audience and medium, preserving supported facts and my approved wording.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

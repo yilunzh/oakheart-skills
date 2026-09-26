@@ -1,0 +1,28 @@
+name: Skill packages
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify packages and helper behavior
+        run: |
+          python3 check.py
+          python3 bundle.py --check
+      - name: Confirm checked-in output matches source
+        run: git diff --exit-code -- dist validation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: oakheart-skills-${{ github.sha }}
+          path: dist/
+          include-hidden-files: true
+          retention-days: 30

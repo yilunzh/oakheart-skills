@@ -8,7 +8,7 @@ Before applying this workflow, read [runtime and dependency adaptation](referenc
 
 # Skill Improvement
 
-Use the current authorized Claude environment and existing task skills. Use the skill-maintenance procedure in references/runtime.md for changes to these exported personal skills; do not require API billing or rewrite provider instructions. This is a maintenance workflow, not a background process or universal post-turn hook.
+Use the current authorized environment and existing task skills. Use the skill-maintenance procedure in references/runtime.md for changes to these shared personal skills; do not require API billing or rewrite provider instructions. This is a maintenance workflow, not a background process or universal post-turn hook.
 
 ## Inspect before proposing
 

@@ -2,7 +2,7 @@
 
 ## Authority and source of truth
 
-The owner-designated version-controlled source is the source of truth for these exported personal instructions; generated Claude packages are distribution copies. Provider/plugin skills and higher-priority project/platform instructions are not editable personal skills. Do not fork them just to bypass ownership. Reuse the external learning workspace identified in learning.md. Fetch current file SHAs before writes, preserve the existing feature branch and use conflict-safe updates; never overwrite main or unrelated paths. Scratch is only a work area.
+The owner-designated version-controlled source is the source of truth for these exported personal instructions; generated platform packages are distribution copies. Provider/plugin skills and higher-priority project/platform instructions are not editable personal skills. Do not fork them just to bypass ownership. Reuse the external learning workspace identified in learning.md. Fetch current file SHAs before writes, preserve the existing feature branch and use conflict-safe updates; never overwrite main or unrelated paths. Scratch is only a work area.
 
 Ledger states: observed → routed → candidate → evaluated → eligible → promoted → monitoring; alternatives: no_change, held, rejected, reopened, rolled_back. Preserve existing schema fields and append versioned extensions rather than discarding historical status. Store transitions as appended dated events; preserve prior decisions and raw results. Track version/digest, affected skills/dependencies, prior baseline, diff/artifact references, evidence, decision maker and authorization scope. Read current state before each write and merge by stable event ID; do not overwrite concurrent observations.
 
