@@ -5,7 +5,7 @@ description: Mine meaningful feedback and task outcomes, audit existing skills, 
 
 # Skill Improvement
 
-Keep ChatGPT as the runtime. Use existing task skills and Skill Creator; do not install an external agent, require API billing, or rewrite provider instructions. This is a maintenance workflow, not a background process or universal post-turn hook.
+Use the current authorized environment and existing task skills. Use the skill-maintenance procedure in references/runtime.md for changes to these shared personal skills; do not require API billing or rewrite provider instructions. This is a maintenance workflow, not a background process or universal post-turn hook.
 
 ## Inspect before proposing
 
@@ -31,7 +31,7 @@ Combine observable requirements, deterministic checks where applicable, and blin
 
 Use `scripts/gate.py validate <experiment.json>` with [gate-format.md](references/gate-format.md) for reproducible evidence-completeness and decision checks. It is a read-only recommendation, not a secure authorization service; verify its recorded evidence and execution identities yourself. Missing independent execution or uncertain results means hold. Never fabricate measurements to satisfy the schema.
 
-Read [operations.md](references/operations.md) for promotion, monitoring and rollback. Respect approval already granted for a concrete change; do not ask twice. After eligibility, use Skill Creator for authorized updates and verify the saved version. Otherwise retain the candidate with the smallest remaining evidence requirement. Report what was measured, what changed, and what remains unverified.
+Read [operations.md](references/operations.md) for promotion, monitoring and rollback. Respect approval already granted for a concrete change; do not ask twice. After eligibility, use the skill-maintenance procedure in references/runtime.md for authorized updates and verify the saved version. Otherwise retain the candidate with the smallest remaining evidence requirement. Report what was measured, what changed, and what remains unverified.
 
 ## Keep the loop small
 

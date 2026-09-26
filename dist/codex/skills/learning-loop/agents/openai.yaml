@@ -1,0 +1,14 @@
+interface:
+  display_name: Skill Improvement
+  short_description: Test lessons before changing reusable skills
+  default_prompt: Use $learning-loop to audit feedback, test candidate changes, and
+    promote only supported improvements.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

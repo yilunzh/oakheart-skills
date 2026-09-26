@@ -1,7 +1,22 @@
 {
   "snapshot_date": "2026-09-26",
-  "scope": "Five personal skills. Provider/plugin skills and external project/evaluation records are not included.",
+  "scope": "Canonical shared sources; host-specific instructions are in adapters/. External evidence stays in its existing ledger.",
   "skills": [
+    {
+      "name": "business-strategy-copilot",
+      "source_status": "active_path",
+      "metadata_status": "not_declared",
+      "export_group": "main",
+      "files": {
+        "SKILL.md": "01e2b440a276d7c38a2870e74765558c1b37c329fbff509de819f20bcbb951b4",
+        "agents/openai.yaml": "b76927d3ced4ef8629eadf96940be3fe3187b32db3573beed0b0748db22faba4",
+        "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+        "references/deliverables.md": "406e441a927f8c9136fbaa6def5b3306f1aa11fe0888e492c94e05c699bd5bba",
+        "references/research-and-reasoning.md": "7242d99f555f0ae5f6b1f53acc51ffee0cd9fa8fd4a09bf7f581dbe74ad0d7d9",
+        "references/review-rubric.md": "39ad571d3606df4e2c19d3dd20b8e3ac0390e0d9186a367a89af50bf87edfa00",
+        "references/working-preferences.md": "901247a36a380bfa9cc4ee30cbebfc4c4bddf8dff4edf1816c6284dbadc00b66"
+      }
+    },
     {
       "name": "copy-reviewer",
       "source_status": "active_path",
@@ -22,6 +37,23 @@
       }
     },
     {
+      "name": "learning-loop",
+      "source_status": "active_path",
+      "metadata_status": "not_declared",
+      "export_group": "main",
+      "files": {
+        "SKILL.md": "2a1a8a5dde093fc0798252fadca637dd7943fb1970d08aabd54071882c6a1d4e",
+        "agents/openai.yaml": "0dfd393a4c73fa01a6b6712c071a155d8cbd125195ceb362e12a9b78b79c06dc",
+        "assets/icon.svg": "d80a4c3e0fd2efa7af88433a53b25a92c78a644175c6669dd78fee50fb53acf6",
+        "references/experiments.md": "6d229ebcc33794cf69b76e89d50a36e545addfffab7243422692addbeae689ba",
+        "references/gate-format.md": "e6bd85a6753175083dbdb4f836787bf9ab763e58ef42d480f0b375dbc7de2030",
+        "references/learning.md": "97edbd4a415c5c407e4900b70a8da801d94d4c73d662d596bd522b0447f9571b",
+        "references/operations.md": "661dc90af11a43791cd6d4e71b4dc35e80b6eca4121ca41d5beb23ffffe98f55",
+        "scripts/gate.py": "83015ab4f4f053f5d34153df93fc32c97d331f5defedfb68476e49f1aa420ace",
+        "scripts/test_gate.py": "b5488eed4d27bd73a3aeb6f03ebbf137ff23312905cc0717d77a879b77001737"
+      }
+    },
+    {
       "name": "sales-pitch-reviewer",
       "source_status": "active_path",
       "metadata_status": "not_declared",
@@ -39,51 +71,19 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "a0002a2487b0ff5b22b89933af7b842c56d6f6bfb4f577727ed52653282077e8",
+        "SKILL.md": "2cdad5184032808ebcf75047c2c26f4cf5aabf39b3d169292d3a12394d2724dd",
         "agents/openai.yaml": "6022277e1aab4efab6ecad2bbd52171ee7ee521ec8833cbd899ad05d4a81d532",
         "assets/client-record.json": "08a7e45e3507b49940fda52b253843b2ff209a82e19d27eaad6ad9236b007f16",
         "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
-        "references/engineering-release.md": "2ec20cf6166c948937bafcc7bffba99424faecf3a65480cec6fc8173376016f0",
+        "references/engineering-release.md": "6a47c389b43e0f07c10ab5c8be6a21d65052a49fc58a8f8755dbea713d11d4ec",
         "references/evaluation.md": "682afa5404de9881939fe23d667f3b249732c8a7a5447741c31ab83190574741",
         "references/growth-service.md": "db74b4d27a8706100dd5f211e68d5218de19681f2c25dfc5a2f9a8ca8372f80a",
         "references/measurement.md": "8b2fd083806abee35bc77e771ecbdbcfa5e4c50bcc240f9faa9b658d7b2154e2",
         "references/niche.md": "5e70e1f423c513634635528a6465010aacb7c827ec88e242ac2386484d69196e",
-        "references/operating.md": "4953d0a6f11a6899f290866ea58403a9f761824851c48f2efb2eda18b6131eb1",
+        "references/operating.md": "263c0d49ade38bb23b6ba6595c3d834e8512587ef1da5ba920a7c4b27ca4c9ff",
         "references/research-design.md": "9a7efdad91d730300d4928a6f060fe85ade48797d8ae16e488f7bc78ce604e11",
         "scripts/agency_checks.py": "40d530c88d0cabe8c33d84c62ade0fda1ebfb700762e133c6006d6379a2cb0e1",
         "scripts/test_agency_checks.py": "89b9630629f259757ee019e1f6399ba960e3b330b108376b86e96cdb64a5767c"
-      }
-    },
-    {
-      "name": "business-strategy-copilot",
-      "source_status": "active_path",
-      "metadata_status": "not_declared",
-      "export_group": "main",
-      "files": {
-        "SKILL.md": "01e2b440a276d7c38a2870e74765558c1b37c329fbff509de819f20bcbb951b4",
-        "agents/openai.yaml": "b76927d3ced4ef8629eadf96940be3fe3187b32db3573beed0b0748db22faba4",
-        "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
-        "references/deliverables.md": "406e441a927f8c9136fbaa6def5b3306f1aa11fe0888e492c94e05c699bd5bba",
-        "references/research-and-reasoning.md": "7242d99f555f0ae5f6b1f53acc51ffee0cd9fa8fd4a09bf7f581dbe74ad0d7d9",
-        "references/review-rubric.md": "39ad571d3606df4e2c19d3dd20b8e3ac0390e0d9186a367a89af50bf87edfa00",
-        "references/working-preferences.md": "901247a36a380bfa9cc4ee30cbebfc4c4bddf8dff4edf1816c6284dbadc00b66"
-      }
-    },
-    {
-      "name": "learning-loop",
-      "source_status": "active_path",
-      "metadata_status": "not_declared",
-      "export_group": "main",
-      "files": {
-        "SKILL.md": "dff5e7babcc8f9db6582a834b8c6e78828e371436a6bce6eab9eea21c79226e8",
-        "agents/openai.yaml": "0dfd393a4c73fa01a6b6712c071a155d8cbd125195ceb362e12a9b78b79c06dc",
-        "assets/icon.svg": "d80a4c3e0fd2efa7af88433a53b25a92c78a644175c6669dd78fee50fb53acf6",
-        "references/experiments.md": "6d229ebcc33794cf69b76e89d50a36e545addfffab7243422692addbeae689ba",
-        "references/gate-format.md": "e6bd85a6753175083dbdb4f836787bf9ab763e58ef42d480f0b375dbc7de2030",
-        "references/learning.md": "a191c3c10c3a73bbdad034d3c107ddba705b389e7303002c7da5bbcacaa84a47",
-        "references/operations.md": "17b6d2314766ded95f663a7791cc5dd5835b90ddd582730e0d4b31812c1526c3",
-        "scripts/gate.py": "83015ab4f4f053f5d34153df93fc32c97d331f5defedfb68476e49f1aa420ace",
-        "scripts/test_gate.py": "b5488eed4d27bd73a3aeb6f03ebbf137ff23312905cc0717d77a879b77001737"
       }
     }
   ]

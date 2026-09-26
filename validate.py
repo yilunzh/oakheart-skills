@@ -1,4 +1,4 @@
-"""Structural checks only: not Claude runtime or behavioral validation."""
+"""Structural checks only: not native runtime or behavioral validation."""
 from pathlib import Path
 import ast
 import hashlib
@@ -18,7 +18,7 @@ def validate():
             assert hashlib.sha256((ROOT/'source'/record['name']/rel).read_bytes()).hexdigest() == digest
             verified += 1
     skills = list((ROOT/'dist').glob('*/skills/*/SKILL.md')) + list((ROOT/'dist/chat-skills').glob('*/SKILL.md'))
-    assert len(skills) == 10, len(skills)
+    assert len(skills) == 3 * len(manifest['skills']), len(skills)
     links = 0
     for skill in skills:
         text = skill.read_text()
@@ -28,7 +28,8 @@ def validate():
         assert name == skill.parent.name and re.fullmatch('[a-z0-9-]{1,64}', name)
         assert re.search(r'^description: .+', header, re.M)
         assert 'references/runtime.md' in text
-        assert not list(skill.parent.rglob('openai.yaml'))
+        if 'codex' not in skill.parts:
+            assert not list(skill.parent.rglob('openai.yaml'))
         for p in skill.parent.rglob('*.md'):
             for link in re.findall(r'\]\(([^)]+)\)', p.read_text()):
                 if re.match(r'^[a-zA-Z]+:', link) or link.startswith('#'):
@@ -43,9 +44,9 @@ def validate():
     for p in plugins:
         data = json.loads(p.read_text())
         assert re.fullmatch('[a-z0-9-]+', data['name'])
-        assert data['version'] == '0.1.1'
+        assert data['version'] == (ROOT/'VERSION').read_text().strip()
     archives = list((ROOT/'dist/chat-uploads').rglob('*.zip'))
-    assert len(archives) == 5
+    assert len(archives) == len(manifest['skills'])
     for p in archives:
         with zipfile.ZipFile(p) as z:
             assert z.testzip() is None
@@ -55,6 +56,8 @@ def validate():
             expected = {(Path(p.stem)/f.relative_to(tree)).as_posix():f.read_bytes() for f in tree.rglob('*') if f.is_file() and '__pycache__' not in f.parts}
             assert set(z.namelist()) == set(expected), f'Archive inventory drift: {p}'
             assert all(z.read(name) == data for name,data in expected.items()), f'Archive content drift: {p}'
+    from sync import verify_release
+    verify_release()
     report = {'source_files_hash_verified':verified,'generated_skill_folders':len(skills),
               'relative_links_verified':links,'individual_upload_archives':len(archives),
               'plugin_manifests_json_checked':1,

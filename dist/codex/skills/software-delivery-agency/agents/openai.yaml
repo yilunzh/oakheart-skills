@@ -1,0 +1,14 @@
+interface:
+  display_name: Software Delivery Agency
+  short_description: Deliver client software, integrations and ongoing service
+  default_prompt: Use $software-delivery-agency to take this business software or
+    integration client through the next ready stage of our agency workflow.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,7 +1,7 @@
 {
   "name": "oakheart",
-  "version": "0.1.1",
-  "description": "Personal skills portability preview; Claude runtime validation pending.",
+  "version": "0.2.0",
+  "description": "Shared Oakheart skills; native activation and behavioral parity require verification.",
   "author": {
     "name": "Yilun Zhang"
   }

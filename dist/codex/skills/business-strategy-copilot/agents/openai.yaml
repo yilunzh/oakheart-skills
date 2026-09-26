@@ -1,0 +1,14 @@
+interface:
+  display_name: Business Strategy Copilot
+  short_description: Think, research, and build reviewed briefs and decks
+  default_prompt: Use $business-strategy-copilot to clarify this business problem,
+    research the evidence, and develop a concise recommendation with independent review.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
