@@ -8,7 +8,7 @@ Resolve companion skills by their frontmatter name among installed skills; plugi
 
 ## Capability mapping
 
-- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
+- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 - **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 - **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 - **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -18,7 +18,7 @@ Resolve companion skills by their frontmatter name among installed skills; plugi
 
 For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 
-Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
+A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 
 ## Claude Code execution
 

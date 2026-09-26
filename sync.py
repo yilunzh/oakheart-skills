@@ -57,7 +57,7 @@ def refresh_manifest():
         record = names.get(p.name, {'name': p.name})
         record['files'] = inventory(p)
         manifest['skills'].append(record)
-    manifest['scope'] = 'Canonical shared sources; host-specific instructions are in adapters/. External evidence stays in its existing ledger.'
+    manifest['scope'] = 'Canonical shared sources; host-specific instructions are in adapters/. Evidence stays with the current task or authorized project.'
     (ROOT/'source-manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
 
 

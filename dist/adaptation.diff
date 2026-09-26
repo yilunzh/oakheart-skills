@@ -2,10 +2,10 @@
 +++ chat/business-strategy-copilot/SKILL.md
 @@ -2,6 +2,9 @@
  name: business-strategy-copilot
- description: Think through business problems collaboratively, conduct outside research, and turn evidence into coherent strategic briefs and executive presentations with independent rubric-based review. Use for business diagnosis, strategic choices, competitive analysis, and research-to-recommendation work; pair with artifact skills for document or slide creation. Exclude routine factual lookups and copy-only edits.
+ description: Help choose a business strategy, niche, pricing model, investment priority or operating approach. Use for should we, help me decide, compare these options, recommend a strategy and decision briefs with business tradeoffs. Own diagnosis and recommendation; use available research tools for missing facts. Exclude routine factual lookups and copy-only edits.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Business Strategy Copilot
@@ -40,7 +40,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -50,7 +50,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude chat and Cowork execution
 +
@@ -59,10 +59,10 @@
 +++ code/business-strategy-copilot/SKILL.md
 @@ -2,6 +2,9 @@
  name: business-strategy-copilot
- description: Think through business problems collaboratively, conduct outside research, and turn evidence into coherent strategic briefs and executive presentations with independent rubric-based review. Use for business diagnosis, strategic choices, competitive analysis, and research-to-recommendation work; pair with artifact skills for document or slide creation. Exclude routine factual lookups and copy-only edits.
+ description: Help choose a business strategy, niche, pricing model, investment priority or operating approach. Use for should we, help me decide, compare these options, recommend a strategy and decision briefs with business tradeoffs. Own diagnosis and recommendation; use available research tools for missing facts. Exclude routine factual lookups and copy-only edits.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Business Strategy Copilot
@@ -97,7 +97,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -107,7 +107,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude Code execution
 +
@@ -118,10 +118,10 @@
 +++ codex/business-strategy-copilot/SKILL.md
 @@ -2,6 +2,9 @@
  name: business-strategy-copilot
- description: Think through business problems collaboratively, conduct outside research, and turn evidence into coherent strategic briefs and executive presentations with independent rubric-based review. Use for business diagnosis, strategic choices, competitive analysis, and research-to-recommendation work; pair with artifact skills for document or slide creation. Exclude routine factual lookups and copy-only edits.
+ description: Help choose a business strategy, niche, pricing model, investment priority or operating approach. Use for should we, help me decide, compare these options, recommend a strategy and decision briefs with business tradeoffs. Own diagnosis and recommendation; use available research tools for missing facts. Exclude routine factual lookups and copy-only edits.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Business Strategy Copilot
@@ -139,7 +139,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -149,7 +149,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Codex execution
 +
@@ -160,10 +160,10 @@
 +++ chat/copy-reviewer/SKILL.md
 @@ -2,6 +2,9 @@
  name: copy-reviewer
- description: Draft, review or rewrite websites, interfaces, emails, presentations, PRDs, business documents and articles for their purpose, audience and medium. Use for initial writing and copy that feels AI-generated, generic or unclear. Preserve review-only and rewrite scope; pair with specialist and artifact skills when relevant.
+ description: Draft, review, rewrite or tighten emails, messages, website copy, articles, presentations and PRDs. Use for requests such as rewrite this email, review this copy, make this clearer, preserve my voice or remove AI-sounding language. Own wording, meaning and audience fit; pair with available artifact tools for files and layout. Respect review-only scope.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Content Writing and Copy Review
@@ -198,7 +198,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -208,7 +208,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude chat and Cowork execution
 +
@@ -217,10 +217,10 @@
 +++ code/copy-reviewer/SKILL.md
 @@ -2,6 +2,9 @@
  name: copy-reviewer
- description: Draft, review or rewrite websites, interfaces, emails, presentations, PRDs, business documents and articles for their purpose, audience and medium. Use for initial writing and copy that feels AI-generated, generic or unclear. Preserve review-only and rewrite scope; pair with specialist and artifact skills when relevant.
+ description: Draft, review, rewrite or tighten emails, messages, website copy, articles, presentations and PRDs. Use for requests such as rewrite this email, review this copy, make this clearer, preserve my voice or remove AI-sounding language. Own wording, meaning and audience fit; pair with available artifact tools for files and layout. Respect review-only scope.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Content Writing and Copy Review
@@ -255,7 +255,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -265,7 +265,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude Code execution
 +
@@ -276,10 +276,10 @@
 +++ codex/copy-reviewer/SKILL.md
 @@ -2,6 +2,9 @@
  name: copy-reviewer
- description: Draft, review or rewrite websites, interfaces, emails, presentations, PRDs, business documents and articles for their purpose, audience and medium. Use for initial writing and copy that feels AI-generated, generic or unclear. Preserve review-only and rewrite scope; pair with specialist and artifact skills when relevant.
+ description: Draft, review, rewrite or tighten emails, messages, website copy, articles, presentations and PRDs. Use for requests such as rewrite this email, review this copy, make this clearer, preserve my voice or remove AI-sounding language. Own wording, meaning and audience fit; pair with available artifact tools for files and layout. Respect review-only scope.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Content Writing and Copy Review
@@ -297,7 +297,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -307,7 +307,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Codex execution
 +
@@ -321,7 +321,7 @@
  description: Mine meaningful feedback and task outcomes, audit existing skills, test generalized candidate changes, and manage evidence-based promotion, monitoring and rollback. Use for skill maintenance, repeated corrections, explicit learning reviews or scheduled improvement audits. Do not turn routine tasks or isolated preferences into mandatory skill rewrites.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Skill Improvement
@@ -356,7 +356,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -366,7 +366,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude chat and Cowork execution
 +
@@ -378,7 +378,7 @@
  description: Mine meaningful feedback and task outcomes, audit existing skills, test generalized candidate changes, and manage evidence-based promotion, monitoring and rollback. Use for skill maintenance, repeated corrections, explicit learning reviews or scheduled improvement audits. Do not turn routine tasks or isolated preferences into mandatory skill rewrites.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Skill Improvement
@@ -413,7 +413,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -423,7 +423,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude Code execution
 +
@@ -437,7 +437,7 @@
  description: Mine meaningful feedback and task outcomes, audit existing skills, test generalized candidate changes, and manage evidence-based promotion, monitoring and rollback. Use for skill maintenance, repeated corrections, explicit learning reviews or scheduled improvement audits. Do not turn routine tasks or isolated preferences into mandatory skill rewrites.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Skill Improvement
@@ -455,7 +455,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -465,7 +465,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Codex execution
 +
@@ -476,10 +476,10 @@
 +++ chat/sales-pitch-reviewer/SKILL.md
 @@ -2,6 +2,9 @@
  name: sales-pitch-reviewer
- description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Apply alongside Sales and copy-reviewer. Exclude internal status decks and general copy-only reviews.
+ description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Pair with copy-reviewer for language and available research tools for commercial evidence. Exclude internal status decks and general copy-only reviews.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Sales Pitch Reviewer
@@ -514,7 +514,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -524,7 +524,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude chat and Cowork execution
 +
@@ -533,10 +533,10 @@
 +++ code/sales-pitch-reviewer/SKILL.md
 @@ -2,6 +2,9 @@
  name: sales-pitch-reviewer
- description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Apply alongside Sales and copy-reviewer. Exclude internal status decks and general copy-only reviews.
+ description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Pair with copy-reviewer for language and available research tools for commercial evidence. Exclude internal status decks and general copy-only reviews.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Sales Pitch Reviewer
@@ -571,7 +571,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -581,7 +581,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude Code execution
 +
@@ -592,10 +592,10 @@
 +++ codex/sales-pitch-reviewer/SKILL.md
 @@ -2,6 +2,9 @@
  name: sales-pitch-reviewer
- description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Apply alongside Sales and copy-reviewer. Exclude internal status decks and general copy-only reviews.
+ description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Pair with copy-reviewer for language and available research tools for commercial evidence. Exclude internal status decks and general copy-only reviews.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Sales Pitch Reviewer
@@ -613,7 +613,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -623,7 +623,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Codex execution
 +
@@ -637,7 +637,7 @@
  description: Run a solo agency engagement delivering business software, websites, internal tools, vendor integrations and ongoing automation or AI services, from qualification and discovery through delivery, measurement and support. Use for agency client work or operating the agency, including racing schools and track-car rentals. Exclude personal recommendations, unrelated coding projects and standalone copy edits that do not need engagement coordination.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Software Delivery Agency
@@ -672,7 +672,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -682,7 +682,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude chat and Cowork execution
 +
@@ -694,7 +694,7 @@
  description: Run a solo agency engagement delivering business software, websites, internal tools, vendor integrations and ongoing automation or AI services, from qualification and discovery through delivery, measurement and support. Use for agency client work or operating the agency, including racing schools and track-car rentals. Exclude personal recommendations, unrelated coding projects and standalone copy edits that do not need engagement coordination.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Software Delivery Agency
@@ -729,7 +729,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -739,7 +739,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Claude Code execution
 +
@@ -753,7 +753,7 @@
  description: Run a solo agency engagement delivering business software, websites, internal tools, vendor integrations and ongoing automation or AI services, from qualification and discovery through delivery, measurement and support. Use for agency client work or operating the agency, including racing schools and track-car rentals. Exclude personal recommendations, unrelated coding projects and standalone copy edits that do not need engagement coordination.
  ---
 +
-+Before applying this workflow, read [runtime and dependency adaptation](references/runtime.md).
++Use available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.
 +
  
  # Software Delivery Agency
@@ -771,7 +771,7 @@
 +
 +## Capability mapping
 +
-+- **Sales:** The source Sales plugin is not bundled. Use an installed equivalent when available. Otherwise use the bundled pitch-review criteria and supplied evidence for bounded commercial drafting/review, and disclose missing Sales-specific research or account checks. Do not claim the original Sales workflow ran or fabricate CRM data.
++- **Commercial work:** Use supplied evidence and the bundled sales-pitch-reviewer for buyer logic. Discover an available CRM or account-research integration only when the task needs it; no particular vendor plugin is required. Never fabricate account data.
 +- **Artifact production:** Discover the host's document, presentation, spreadsheet, PDF, browser, and image tools when needed. Use actual rendering and behavioral inspection when required. If a required capability is absent, complete supported work and identify the precise missing validation. Text review is not visual QA.
 +- **Sites:** No ChatGPT Sites credentials, project tools, or hosting are transferred. Use the existing project's actual repository/build/release workflow. An existing Sites deployment must be handled in its authorized environment until migration is explicitly requested. Do not create a replacement deployment implicitly.
 +- **Library and context:** ChatGPT Library, memories, previous chats, and project files do not transfer with a skill. Use supplied artifacts and authorized connected storage. Ask for a missing authoritative artifact only when it controls the task. Never invent prior decisions.
@@ -781,7 +781,7 @@
 +
 +For an authorized change, read the current source, relevant evidence, dependencies, and existing promotion policy. Preserve an exact baseline and a bounded diff. The canonical source is `yilunzh/oakheart-skills`, `source/`; host differences belong in `adapters/`. Read that repository's AGENTS.md and CONTRIBUTING.md before a change. Edit shared source or adapters on a branch, not generated ZIPs or installed caches. If work began in an installed copy, preserve its diff and reconcile it into the canonical source before updating that installation. Run relevant checks, rebuild distributions, record the version and content hashes, and save through the established version-control workflow. Keep unapproved candidates outside installed skill paths. Only report activation after checking the installed version in a fresh session.
 +
-+Preserve the existing learning ledger at `yilunzh/personal-os`, branch `feature/skill-learning-loop`, paths `learning-loop/WORKFLOW.md` and `learning-loop/state.json`. It is not bundled or connected by this export. Read its current policy before maintenance; do not rewrite it to relax release gates. If unavailable, report the missing ledger access; a local proposal is not a recorded promotion. A package update does not approve future behavioral changes or prove activation in any host.
++A package update does not prove native activation. Learning-loop evidence can remain task-local or be saved with the current project; no external repository is required.
 +
 +## Codex execution
 +
@@ -793,7 +793,7 @@
 @@ -0,0 +1,8 @@
 +{
 +  "name": "oakheart",
-+  "version": "0.2.1",
++  "version": "0.3.0",
 +  "description": "Shared Oakheart skills; native activation and behavioral parity require verification.",
 +  "author": {
 +    "name": "Yilun Zhang"
@@ -801,7 +801,7 @@
 +}
 --- /dev/null
 +++ oakheart/agents/artifact-reviewer.md
-@@ -0,0 +1,11 @@
+@@ -0,0 +1,13 @@
 +---
 +name: artifact-reviewer
 +description: Independently review a supplied artifact against its brief, evidence, permitted changes, and task-specific rubric. Return findings without editing or delegating.
@@ -813,3 +813,5 @@
 +Assess requirement fulfillment, unsupported claims, preservation of approved content, audience and medium fit, and applicable domain criteria. Cite exact passages or observable omissions. Identify strengths to preserve. Report critical failures first, then material improvements and optional refinements. Use a rubric's scoring scale when supplied, but evaluate without being told a preferred verdict or target score.
 +
 +Return pass, revise, or blocked with evidence and concrete recommended changes. Distinguish checks completed from checks unavailable. File inspection alone does not verify browser behavior, rendered visual quality, external data, or production outcomes. If a criterion needs those checks and no adequate evidence was supplied, mark it unverified. Do not invent a pass or impersonate human calibration.
++
++Check arithmetic visible in supplied material and identify unsupported claims, including nonnumeric claims about completed products, customers or experience. For consequential calculations, require a supplied reproducible calculation or a separate authorized verification; do not claim an executed recomputation. External claims require supplied sources or separately obtained verification. Return unverified for unavailable evidence, and distinguish a read failure from a completed check.

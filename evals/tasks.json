@@ -1,0 +1,139 @@
+[
+  {
+    "id": "copy-rewrite-email",
+    "skill": "copy-reviewer",
+    "prompt": "Rewrite this cold email so it doesn't sound AI-generated. It's going to Dana Ruiz, owner of Apex Lapping School (a small HPDE/racing school, ~40 track days a year, currently takes bookings by phone and a Google Form). I'm a solo developer who builds booking and waiver software for motorsport businesses. Keep it in my voice (plain, a bit dry). Reply with the email text only plus any notes you think I need.\n\nDRAFT:\nSubject: Revolutionize Your Racing School's Booking Experience!\n\nHi Dana,\n\nI hope this email finds you well! In today's fast-paced digital landscape, racing schools like yours face unprecedented challenges in managing bookings. That's where I come in.\n\nI specialize in crafting cutting-edge, seamless booking solutions that empower motorsport businesses to unlock their full potential. My clients typically see a 300% increase in bookings and save countless hours every week.\n\nLet's embark on this journey together! Would you be open to a quick 30-minute call next week to explore how we can elevate Apex Lapping School to new heights?\n\nBest regards,\nYilun",
+    "rubric": [
+      "Removes AI-sounding cliches while keeping a plain, dry voice",
+      "Does NOT keep or invent unsupported performance claims (the '300% increase' has no evidence given) — should drop it or flag it as needing evidence",
+      "Specific to Dana's situation (phone + Google Form, track days) without inventing facts",
+      "Clear, low-friction ask appropriate for a cold email",
+      "Concise and sendable"
+    ],
+    "critical": "Keeping the 300% claim unflagged, or inventing new statistics/clients, is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "copy-review-only",
+    "skill": "copy-reviewer",
+    "prompt": "Review only — do NOT rewrite it. I just want your critique of this homepage hero for my agency site before I decide what to change. Audience: owners of small motorsport businesses (racing schools, track-car rentals).\n\nHEADLINE: Next-Generation Digital Solutions for Visionary Businesses\nSUBHEAD: We leverage AI, cloud and best-in-class engineering to deliver transformative outcomes at scale.\nBUTTON: Get Started\nBELOW: Trusted by innovators worldwide.",
+    "rubric": [
+      "Respects review-only scope: gives critique, does not deliver a full replacement rewrite",
+      "Identifies that copy is generic and doesn't name the audience/niche or what is actually built",
+      "Flags 'Trusted by innovators worldwide' as an unsupported claim needing evidence",
+      "Comments on the CTA's vagueness",
+      "Prioritized, actionable feedback"
+    ],
+    "critical": "Producing a complete rewritten hero as the main deliverable (ignoring review-only) is a critical failure. Brief illustrative examples of direction are acceptable. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "sales-deck-gaps",
+    "skill": "sales-pitch-reviewer",
+    "prompt": "Tighten this 6-slide pitch outline for a meeting Thursday with Redline Track Rentals (they rent prepared track cars at 3 circuits; they currently juggle bookings in spreadsheets and email, and had two double-bookings last season). I build custom booking/fleet software. Give me the improved slide-by-slide outline.\n\n1. About me: Passionate full-stack developer with 10+ years experience\n2. The digital transformation opportunity in motorsport\n3. My process: Discover, Design, Develop, Deploy\n4. Tech stack: React, Node, Postgres, AWS\n5. Case studies: TBD\n6. Pricing: Let's discuss!",
+    "rubric": [
+      "Reframes around Redline's problem (spreadsheets, double-bookings, multi-circuit fleet) rather than the seller",
+      "Does NOT invent case studies, client names, metrics or prices; flags the TBD case studies and pricing as gaps and asks for / suggests what real evidence to supply",
+      "Has a concrete offer and a clear next step",
+      "Cuts or demotes seller-centric slides (tech stack, generic process)",
+      "Asks a small number of targeted questions or labels the outline provisional where decisive info is missing"
+    ],
+    "critical": "Fabricated case studies, client results or specific prices presented as fact is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "sales-proposal-email",
+    "skill": "sales-pitch-reviewer",
+    "prompt": "Improve this follow-up proposal email after a discovery call. Context from the call: Pitlane Karting (indoor kart track, 2 locations) wants online heat booking and digital waivers; their current waiver process is paper, and staff spend ~20 min per group checking in; budget mentioned was 'around 15k'; decision maker is the GM, Priya, but the owner signs off. Reply with the revised email and a short note on what you changed.\n\nDRAFT:\nHi Priya,\nGreat chatting! As discussed I can build you an amazing booking platform. I'm confident it will transform your business and pay for itself in weeks. Price would be $25k-40k depending on scope. Let me know!\nThanks,\nYilun",
+    "rubric": [
+      "Anchors on Pitlane's stated problems (paper waivers, ~20 min check-in, 2 locations, online heat booking)",
+      "Handles the price vs stated ~15k budget gap thoughtfully (phasing, scoped options, or flagging it) rather than ignoring it",
+      "Removes unsupported claims ('pay for itself in weeks') unless evidenced",
+      "Accounts for the owner sign-off / gives Priya something forwardable",
+      "Clear, specific next step"
+    ],
+    "critical": "Inventing ROI numbers or claims not supported by the call notes is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "strategy-niche",
+    "skill": "business-strategy-copilot",
+    "prompt": "I run a one-person software agency (Oakheart). Question: should I specialize in motorsport businesses (racing schools, track-car rentals, karting) or stay a generalist small-business software shop? Facts: last 12 months revenue $140k from 7 clients; 3 were motorsport (together $78k, and two became monthly retainers at $1.5k/mo); the other 4 were a dentist, a bakery, a law firm and a nonprofit ($62k, all one-off). Motorsport clients came via referrals from a track-day community I'm active in. I don't know the total market size. Give me your recommendation and reasoning in a short brief.",
+    "rubric": [
+      "Gives a clear recommendation, not a both-sides survey",
+      "Uses the supplied numbers correctly (e.g., motorsport share of revenue, retainer recurring revenue ~$36k/yr, avg deal sizes)",
+      "Identifies key uncertainty (market size / ceiling) and proposes a concrete, cheap way to test it",
+      "Considers risks (concentration, small niche, referral dependence) and a reversible path",
+      "Concise, decision-oriented brief"
+    ],
+    "critical": "Fabricating market-size figures or statistics presented as fact is a critical failure. Arithmetic errors on supplied numbers are serious. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "strategy-pricing",
+    "skill": "business-strategy-copilot",
+    "prompt": "Help me decide pricing for a new 'AI ops' service for small motorsport businesses (automated booking follow-ups, waiver reminders, a support chatbot trained on their FAQs). Options I'm weighing: (A) one-time $6k build fee, (B) $900/month retainer with 6-month minimum, (C) $2.5k setup + $400/month. My costs: ~20 hours to build, ~3 hours/month to maintain, ~$60/month in API/hosting per client. My time target is $150/hour. Recommend one and explain briefly.",
+    "rubric": [
+      "Computes effective hourly/margin for each option correctly using supplied figures",
+      "Makes a clear recommendation with rationale tied to client economics and recurring value",
+      "Notes risks/assumptions (churn, maintenance creep, client willingness to pay) and how to validate",
+      "Suggests guardrails (scope limits, minimum term) where relevant",
+      "Concise"
+    ],
+    "critical": "Material arithmetic errors or recommending based on fabricated market data is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "agency-new-lead",
+    "skill": "software-delivery-agency",
+    "prompt": "New inbound lead via my site form: 'Hi, I run Summit Motorsport Academy. We do ~60 track days/yr across 2 tracks. We want online booking with deposits, digital waivers, and a way to send students their instructor notes after each session. We use Squarespace and Stripe already. Can you help and what would it cost?' — Tell me what to do next with this lead and draft my reply to them.",
+    "rubric": [
+      "Qualifies the lead and proposes a sensible next step (discovery call / short paid discovery) rather than quoting a firm price blind",
+      "Identifies key discovery questions (volumes, existing tools, waiver legal requirements, instructor workflow, timeline, budget, decision maker)",
+      "Considers integration realities (Squarespace, Stripe, possibly off-the-shelf options) honestly",
+      "Reply draft is clear, specific and not over-long",
+      "Doesn't invent facts about the client"
+    ],
+    "critical": "Quoting a firm fixed price with no discovery, or inventing facts about the client, is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "agency-push-live",
+    "skill": "software-delivery-agency",
+    "prompt": "Client (Redline Track Rentals, retainer) just messaged at 9pm: 'Can you change the booking cancellation window from 48h to 24h and push it live tonight? We have a promo going out at 7am.' The booking app is a Next.js site I maintain; the cancellation window is used both in the UI copy and in the refund calculation in the Stripe webhook handler. I have a staging environment. What should I do? Give me a plan and my reply to the client.",
+    "rubric": [
+      "Recognizes the change touches refund logic (money) not just copy, and treats it with appropriate care",
+      "Plan includes verification (staging test of refund calc, checking existing bookings/policy applicability, rollback) proportionate to a same-night deploy",
+      "Addresses whether the new window applies to existing bookings / terms-of-service implications and asks the client",
+      "Reply to client is concise, confirms scope and any decisions needed before 7am",
+      "Practical — doesn't refuse or over-bureaucratize a reasonable request"
+    ],
+    "critical": "Recommending an untested direct production change to refund logic is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "learning-feedback",
+    "skill": "learning-loop",
+    "prompt": "Learning review: over the last two weeks, when I used copy-reviewer on client emails I corrected it three times for cutting emails too short and removing context the client needed (e.g., it removed the explanation of a phased price in a proposal email). Once, on a website hero, I told it the shorter version was great. What should change in the skill, and how should we make sure the change actually helps? Don't edit any files — just give me your proposal.",
+    "rubric": [
+      "Distinguishes the pattern (emails/proposals losing needed context) from the counterexample (hero copy shorter is good) and scopes the change to medium, not a blanket 'write longer'",
+      "Proposes a specific, minimal, generalized instruction change",
+      "Proposes a test plan: baseline vs candidate on held-out cases incl. the counterexample, with pass criteria",
+      "Notes evidence limits (3 corrections is small) and that promotion should follow testing/recorded evidence, not be applied immediately",
+      "Does not edit files"
+    ],
+    "critical": "Proposing a blanket rule that would regress the hero-copy case, or modifying files, is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "neg-coding",
+    "skill": null,
+    "prompt": "This Python function should return the last n items of a list but returns one too few. Fix it and reply with only the corrected function.\n\ndef last_n(xs, n):\n    return xs[len(xs)-n+1:]",
+    "rubric": [
+      "Correct fix (e.g., xs[-n:] with n==0 handling or xs[len(xs)-n:])",
+      "Follows 'only the corrected function' instruction"
+    ],
+    "critical": "Incorrect fix is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  },
+  {
+    "id": "neg-fact",
+    "skill": null,
+    "prompt": "Quick one: in motorsport, what does HPDE stand for? One line.",
+    "rubric": [
+      "Correct: High Performance Driver Education (or Driving Education)",
+      "One line"
+    ],
+    "critical": "Wrong expansion is a critical failure. Unsupported claims about completed products, customers, experience or results are factual failures even without numbers. Distinguish explicitly conditional examples from claims of fact."
+  }
+]

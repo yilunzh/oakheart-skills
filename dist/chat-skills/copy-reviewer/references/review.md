@@ -4,7 +4,7 @@ Match review effort to the task. For routine short work, self-check against the 
 
 Give the reviewer the purpose, audience, medium, raw facts, constraints, approved examples/feedback and complete draft or relevant surface. Include the requested mode. Omit the writer's private rationale, prior scores, desired score and version identity. Do not omit user requirements to achieve blinding. Ask for diagnosis only; the reviewer should not publish or mutate the artifact.
 
-Only the owning writer or review coordinator commissions reviewers. A delegated reviewer returns findings directly; it must not spawn another reviewer or reinvoke the writer. Share one review across cooperating writing and Sales skills when it covers both assignments.
+Only the owning writer or review coordinator commissions reviewers. A delegated reviewer returns findings directly; it must not spawn another reviewer or reinvoke the writer. Share one review across cooperating writing and pitch-review skills when it covers both assignments.
 
 Assess reader usefulness, argument, evidence, medium fit, voice and preservation. Require the exact problematic passage, why it matters to this brief and the smallest useful correction. Identify strong material worth retaining. Do not manufacture faults or force a numerical quota of changes. Flag missing evidence and unresolved decisions rather than filling them in.
 

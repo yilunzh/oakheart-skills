@@ -1,11 +1,11 @@
 ---
 name: sales-pitch-reviewer
-description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Apply alongside Sales and copy-reviewer. Exclude internal status decks and general copy-only reviews.
+description: Review or improve customer-facing pitches and proposals for buyer relevance, seller credibility, a clear offer and supported evidence. Pair with copy-reviewer for language and available research tools for commercial evidence. Exclude internal status decks and general copy-only reviews.
 ---
 
 # Sales Pitch Reviewer
 
-Use the applicable Sales workflow for commercial reasoning and `copy-reviewer` for writing and medium fit. Share one brief: purpose, audience, relationship and buying stage, medium, supported facts and constraints. Load each once without recursive handoffs. Use the presentation skill when authoring slides. Preserve review-only and narrow copy-editing scope.
+Use available commercial research tools when needed for commercial reasoning and `copy-reviewer` for writing and medium fit. Share one brief: purpose, audience, relationship and buying stage, medium, supported facts and constraints. Load each once without recursive handoffs. Use the presentation skill when authoring slides. Preserve review-only and narrow copy-editing scope.
 
 ## Resolve material gaps before drafting
 

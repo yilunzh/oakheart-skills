@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-09-26",
-  "scope": "Canonical shared sources; host-specific instructions are in adapters/. External evidence stays in its existing ledger.",
+  "scope": "Canonical shared sources; host-specific instructions are in adapters/. Evidence stays with the current task or authorized project.",
   "skills": [
     {
       "name": "business-strategy-copilot",
@@ -8,12 +8,12 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "01e2b440a276d7c38a2870e74765558c1b37c329fbff509de819f20bcbb951b4",
+        "SKILL.md": "e11fb7deee561610f14aefab5bfa1107fa712868058b300bbfb137fd0feca5ec",
         "agents/openai.yaml": "b76927d3ced4ef8629eadf96940be3fe3187b32db3573beed0b0748db22faba4",
         "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
         "references/deliverables.md": "406e441a927f8c9136fbaa6def5b3306f1aa11fe0888e492c94e05c699bd5bba",
         "references/research-and-reasoning.md": "7242d99f555f0ae5f6b1f53acc51ffee0cd9fa8fd4a09bf7f581dbe74ad0d7d9",
-        "references/review-rubric.md": "39ad571d3606df4e2c19d3dd20b8e3ac0390e0d9186a367a89af50bf87edfa00",
+        "references/review-rubric.md": "df152a2c45ce9eaa90965072f414ad4292c65df631626e32e218702f72fd1832",
         "references/working-preferences.md": "ccc2c9199fb137d6b597f1008b93b9c9d5a2f05e79c290859453476cbe350e49"
       }
     },
@@ -23,7 +23,7 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "e82009c626d9d0d89559976ac8927d57a8886b5b09ad052e0fb354666723649d",
+        "SKILL.md": "32413c160652b5fa400c252b2b0c4a4afdeda51cf0998ce29211671a1ad08e15",
         "agents/openai.yaml": "a0c82e96fa3d3658a2ffcf9b06d0a8272147b1f8d63ce216723aad2ca7de43a5",
         "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
         "references/articles.md": "528705486599132d7529dc9d30cf3a25e9a99aef4a27b9370290f6013b3b58aa",
@@ -31,7 +31,7 @@
         "references/evaluation.md": "86bba9e4abfbf6b6143a7b4d399050815a1f5fa87ce268546eeef7afa9a07c7c",
         "references/presentations.md": "f918c9a2990f6160ceebddb63fb59cfd76f4bd46af7983ff31e33c2b3e5d40c8",
         "references/requirements.md": "96a0092e1bb0a193711213fc7ebe957968d6fa5eea72787c1ee408108ea445d6",
-        "references/review.md": "92bd998798517f8ce08fe01888c0210f5ee0230bc527899f191a6cce7ce20e66",
+        "references/review.md": "abde6f6426714a3a109231d0798b3d83586f4fa44f34076bef1a226cb60819bc",
         "references/voice-preferences.md": "a23883783de81953ebccc8de2ceec7cc481fe0f40dc0e02dad24ca10c94ad711",
         "references/websites.md": "f91ec430ab7e02829eb428664d3d273ac9ce2a5d9117b52bc1253a2df391c9c8"
       }
@@ -42,13 +42,13 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "2a1a8a5dde093fc0798252fadca637dd7943fb1970d08aabd54071882c6a1d4e",
+        "SKILL.md": "4de4dc4ae61a0557134f6750ea2256dc534f1945cbeb14b38398fc3375652913",
         "agents/openai.yaml": "0dfd393a4c73fa01a6b6712c071a155d8cbd125195ceb362e12a9b78b79c06dc",
         "assets/icon.svg": "d80a4c3e0fd2efa7af88433a53b25a92c78a644175c6669dd78fee50fb53acf6",
-        "references/experiments.md": "6d229ebcc33794cf69b76e89d50a36e545addfffab7243422692addbeae689ba",
+        "references/experiments.md": "316eab302aab87d7db9958ec5f925d18f3b03f71d6627a58738e659163a3c60a",
         "references/gate-format.md": "e6bd85a6753175083dbdb4f836787bf9ab763e58ef42d480f0b375dbc7de2030",
-        "references/learning.md": "97edbd4a415c5c407e4900b70a8da801d94d4c73d662d596bd522b0447f9571b",
-        "references/operations.md": "661dc90af11a43791cd6d4e71b4dc35e80b6eca4121ca41d5beb23ffffe98f55",
+        "references/learning.md": "e44e40f15fe02dae5660416e474f303445929f2026be28e3aeb8831e95b27d2e",
+        "references/operations.md": "4ec8a56fdc980dc65781f8c4aae0e644ce2a667302d6635bea9a7697d9900327",
         "scripts/gate.py": "83015ab4f4f053f5d34153df93fc32c97d331f5defedfb68476e49f1aa420ace",
         "scripts/test_gate.py": "b5488eed4d27bd73a3aeb6f03ebbf137ff23312905cc0717d77a879b77001737"
       }
@@ -59,7 +59,7 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "877ed77076e03cd1a99a244b9a3be7219afd58c56012409a98f33a5cd7047f93",
+        "SKILL.md": "f7107651a6e9fcf39d47ad5aa72f418360eb2c2b143670f77d49c1d8a2ca68b4",
         "agents/openai.yaml": "6393356779683c5899902f9c49265a8b5fd1fe096e3f6450d47d30f7e745fad7",
         "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
         "references/discovery-evidence.md": "a1691184879ed068c91592670a9ccabeb39517d22525ebe8ced4d6e17669af19"
@@ -71,17 +71,17 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "2cdad5184032808ebcf75047c2c26f4cf5aabf39b3d169292d3a12394d2724dd",
+        "SKILL.md": "74fcb8b53b7d9cd8b8b39ece9dfa4ec7c5c5b7a282aeb06e0c97afd1f8547633",
         "agents/openai.yaml": "6022277e1aab4efab6ecad2bbd52171ee7ee521ec8833cbd899ad05d4a81d532",
         "assets/client-record.json": "08a7e45e3507b49940fda52b253843b2ff209a82e19d27eaad6ad9236b007f16",
         "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
         "references/engineering-release.md": "6a47c389b43e0f07c10ab5c8be6a21d65052a49fc58a8f8755dbea713d11d4ec",
         "references/evaluation.md": "682afa5404de9881939fe23d667f3b249732c8a7a5447741c31ab83190574741",
-        "references/growth-service.md": "db74b4d27a8706100dd5f211e68d5218de19681f2c25dfc5a2f9a8ca8372f80a",
+        "references/growth-service.md": "a7d26e67bacf3c62368d26dad6eba531982fb21cef95f3d615297fbc676cb2aa",
         "references/measurement.md": "8b2fd083806abee35bc77e771ecbdbcfa5e4c50bcc240f9faa9b658d7b2154e2",
         "references/niche.md": "68bf9e3eda16fa3f9fba283144dd90917b434d23555dfb334fd7ba7945c0a806",
         "references/operating.md": "263c0d49ade38bb23b6ba6595c3d834e8512587ef1da5ba920a7c4b27ca4c9ff",
-        "references/research-design.md": "9c4214fc2bd68fca32f44c62e962ba6271be597af4dd7afb05aaec88d633ede3",
+        "references/research-design.md": "576f7a10fabc51b66d18dcdb78e108d7f4e42b859c0eac29a08db741d357a0d9",
         "scripts/agency_checks.py": "40d530c88d0cabe8c33d84c62ade0fda1ebfb700762e133c6006d6379a2cb0e1",
         "scripts/test_agency_checks.py": "89b9630629f259757ee019e1f6399ba960e3b330b108376b86e96cdb64a5767c"
       }

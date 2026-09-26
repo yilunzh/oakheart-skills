@@ -53,7 +53,7 @@ def build():
             p = dest / 'SKILL.md'
             text = p.read_text()
             marker = text.find('\n---', 4) + 4
-            text = text[:marker] + '\n\nBefore applying this workflow, read [runtime and dependency adaptation](references/runtime.md).\n' + text[marker:]
+            text = text[:marker] + '\n\nUse available host capabilities and relative reference paths. Read [runtime guidance](references/runtime.md) only when resolving a tool dependency, independent review, installation or skill maintenance; do not narrate routine setup.\n' + text[marker:]
             p.write_text(text)
             write(dest / 'references/runtime.md', COMMON + (ADAPTER / (mode + '.md')).read_text())
             paths = {p.relative_to(source).as_posix() for p in source.rglob('*') if p.is_file()} | {p.relative_to(dest).as_posix() for p in dest.rglob('*') if p.is_file()}
