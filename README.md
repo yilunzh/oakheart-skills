@@ -40,7 +40,19 @@ Check that the skills are available and try `$copy-reviewer`. For one project's 
 
 These commands manage local Codex files. ChatGPT Work's account skills use a separate installation process through Skill Creator; this repository cannot update those automatically.
 
+## Use across Claude (recommended)
+
+On a Claude Team or Enterprise plan, an organization Owner can sync this repository once. The `oakheart` plugin then reaches Claude chat, Cowork and Claude Code, including cloud sessions, and updates on each push to `main`:
+
+1. On claude.ai, open **Organization settings → Plugins & skills → Add → Sync from GitHub**.
+2. Choose `yilunzh/oakheart-skills`, installing the Claude GitHub App on it if asked.
+3. Leave **Sync automatically** on, choose the default access, and select **Create**.
+
+Members find the plugin under **Customize → Plugins**, and its skills are namespaced, such as `oakheart:copy-reviewer`. Sync reads `.claude-plugin/marketplace.json`. Bump `VERSION` for each release so clients detect the update. Once synced, skip the manual uploads and `--plugin-dir` below; they would load a second copy. See [organization sync](https://claude.com/docs/plugins/org-sync).
+
 ## Use in Claude chat or Cowork
+
+Without organization sync, upload the skills manually:
 
 1. Download and extract the package above.
 2. In Claude on the web, open **Customize → Skills → + → Create skill → Upload a skill**.
