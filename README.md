@@ -2,7 +2,7 @@
 
 Five reusable workflows for writing, business strategy, sales, software delivery, and improving how you work with AI. One shared source for Codex, Claude Code, Claude chat, and Cowork.
 
-**Version 0.3.0 · Ready to try.** Package and installer checks pass. Native activation and task quality still need testing in each environment.
+**Version 0.3.1 · Ready to try.** Package and installer checks pass. Native activation and task quality still need testing in each environment.
 
 [Download the package](./Oakheart_Claude_Skills.zip?raw=true)
 
