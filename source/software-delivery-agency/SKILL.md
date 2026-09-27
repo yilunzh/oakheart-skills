@@ -31,6 +31,8 @@ Keep a plan for multi-stage work and proceed through ready stages. Specialists r
 
 Initialize a dossier from `assets/client-record.json` in an authorized durable destination; keep runtime records outside this skill. Use `scripts/agency_checks.py` for sample-size planning and evidence-completeness checks. A script pass neither verifies evidence nor authorizes external actions.
 
-Honor existing scope and permissions. Preparing outreach does not authorize sending. Building this workflow does not authorize client-account changes, purchases, production launches, or recurring tasks. Carry established permissions forward without repeated questions.
+Honor existing scope and permissions. Preparing outreach does not authorize sending. Building this workflow does not authorize client-account changes, purchases, production launches, or recurring tasks. Carry established permissions forward without repeated questions. When a pending client decision affects money, customer terms or legal exposure, make the narrower reversible option the default if they do not answer, such as applying a policy change only to new bookings.
+
+In messages drafted for the founder, state experience, past clients, niche focus, results or capabilities only when the task or client record supplies them. Otherwise omit the claim or leave a marked placeholder. This skill's motorsport references are research guidance, not evidence of the founder's track record.
 
 Report completed work, evidenced versus proposed outcomes, and the smallest missing input for a blocked stage. Never describe instructions as a running service, a prototype as production, or simulation scores as conversion uplift.
