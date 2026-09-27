@@ -71,7 +71,7 @@
       "metadata_status": "not_declared",
       "export_group": "main",
       "files": {
-        "SKILL.md": "74fcb8b53b7d9cd8b8b39ece9dfa4ec7c5c5b7a282aeb06e0c97afd1f8547633",
+        "SKILL.md": "dfb3e54dedd63e4aed4074ccc771f955a68ef2011976913214d871eeb38eb01c",
         "agents/openai.yaml": "6022277e1aab4efab6ecad2bbd52171ee7ee521ec8833cbd899ad05d4a81d532",
         "assets/client-record.json": "08a7e45e3507b49940fda52b253843b2ff209a82e19d27eaad6ad9236b007f16",
         "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
