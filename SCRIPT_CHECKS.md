@@ -41,3 +41,9 @@ Removed AutoNation-specific strategy/application context and PTC prospect/bookin
 - Independent static review verified fixes for missing judgments, malformed streams and judging implementation identity. No remaining blocker within that review's scope.
 - One fresh-agent exercise produced correct six-month pricing economics and a plain email without unsupported customer claims. This was a bounded exploratory check, not a matched benchmark or evidence of Claude performance.
 - No Claude executable is available in this build environment. Native routing, reference access, reviewer execution, output quality and current performance remain untested.
+
+## Agency claim and default rules — version 0.3.1
+
+- software-delivery-agency now defaults pending money, terms or legal decisions to the narrower reversible option, and states founder experience, clients or capabilities only when supplied (PR #4).
+- Claude Code 2.1.283, restricted headless, 3 runs per condition against v0.3.0: candidate preferred in 6 of 12 blind order-combined pairs, baseline in 1, 5 order-sensitive, no critical failures. Candidate defaulted to new bookings only in 6 of 6 refund-change runs. Synthetic tasks, model-graded, no human calibration.
+- Claude chat, Cowork and Codex behavior untested.

@@ -1,6 +1,6 @@
 {
   "files": {
-    "adaptation.diff": "72395d1b77176bd8452034049ee0cae74fc7af93005db51ae58430c549858a4e",
+    "adaptation.diff": "4ed5718454f359b833889453234a39807c61eed6c867e5c07e510c933d2f971f",
     "chat-skills/business-strategy-copilot/SKILL.md": "e0c120a947f858ffa12b07668cab615a7538c9efe678268b7642db9d3577ed02",
     "chat-skills/business-strategy-copilot/assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
     "chat-skills/business-strategy-copilot/references/deliverables.md": "406e441a927f8c9136fbaa6def5b3306f1aa11fe0888e492c94e05c699bd5bba",
@@ -99,7 +99,7 @@
     "codex/skills/software-delivery-agency/references/runtime.md": "571b1c0876a0344c71c32821ce061ccc54317a347c44ec4179c00e9cfea0a256",
     "codex/skills/software-delivery-agency/scripts/agency_checks.py": "40d530c88d0cabe8c33d84c62ade0fda1ebfb700762e133c6006d6379a2cb0e1",
     "codex/skills/software-delivery-agency/scripts/test_agency_checks.py": "89b9630629f259757ee019e1f6399ba960e3b330b108376b86e96cdb64a5767c",
-    "oakheart/.claude-plugin/plugin.json": "2fcfa48e6be35b8f52e517a2338febe5080216d19d2c30327e018e589f181e38",
+    "oakheart/.claude-plugin/plugin.json": "c88bfa74ad708dfc741d0275dfa78ecaddca861d414c4da33557856ace22650d",
     "oakheart/agents/artifact-reviewer.md": "15422fa09a20081a8f97b7e96a948f18d6a7e72bb56d2cd0d1f3d79019bf0387",
     "oakheart/skills/business-strategy-copilot/SKILL.md": "e0c120a947f858ffa12b07668cab615a7538c9efe678268b7642db9d3577ed02",
     "oakheart/skills/business-strategy-copilot/assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
@@ -146,11 +146,11 @@
     "oakheart/skills/software-delivery-agency/scripts/agency_checks.py": "40d530c88d0cabe8c33d84c62ade0fda1ebfb700762e133c6006d6379a2cb0e1",
     "oakheart/skills/software-delivery-agency/scripts/test_agency_checks.py": "89b9630629f259757ee019e1f6399ba960e3b330b108376b86e96cdb64a5767c"
   },
-  "input_sha256": "abb9a683d4ee0ecf4e2af6b528b07a49858135a20f44b86d9de140ed149d6f86",
+  "input_sha256": "de1003394e236b167f594f8a28a822f8d1b017e78958c9f75c7d45c3e546e3c7",
   "targets": {
     "chat": "chat-skills",
     "code": "oakheart/skills",
     "codex": "codex/skills"
   },
-  "version": "0.3.0"
+  "version": "0.3.1"
 }

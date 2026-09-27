@@ -793,7 +793,7 @@
 @@ -0,0 +1,8 @@
 +{
 +  "name": "oakheart",
-+  "version": "0.3.0",
++  "version": "0.3.1",
 +  "description": "Shared Oakheart skills; native activation and behavioral parity require verification.",
 +  "author": {
 +    "name": "Yilun Zhang"
