@@ -45,6 +45,13 @@ def validate():
         data = json.loads(p.read_text())
         assert re.fullmatch('[a-z0-9-]+', data['name'])
         assert data['version'] == (ROOT/'VERSION').read_text().strip()
+    # Organization sync and `claude plugin marketplace add` read this file.
+    market = json.loads((ROOT/'.claude-plugin/marketplace.json').read_text())
+    assert [e['name'] for e in market['plugins']] == [json.loads(p.read_text())['name'] for p in plugins]
+    for entry in market['plugins']:
+        assert entry['source'].startswith('./') and 'version' not in entry
+        assert (ROOT/entry['source']/'.claude-plugin/plugin.json').is_file()
+        assert not (ROOT/entry['source']/'bin').exists(), 'Organization sync rejects a top-level bin/'
     archives = list((ROOT/'dist/chat-uploads').rglob('*.zip'))
     assert len(archives) == len(manifest['skills'])
     for p in archives:

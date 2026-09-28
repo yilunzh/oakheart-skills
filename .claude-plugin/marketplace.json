@@ -1,0 +1,16 @@
+{
+  "name": "oakheart-skills",
+  "owner": {
+    "name": "Yilun Zhang"
+  },
+  "metadata": {
+    "description": "Oakheart's shared skills, packaged as one Claude plugin."
+  },
+  "plugins": [
+    {
+      "name": "oakheart",
+      "source": "./dist/oakheart",
+      "description": "Copy review, sales pitch review, business strategy, software delivery, and learning-loop skills, plus a read-only artifact reviewer."
+    }
+  ]
+}
