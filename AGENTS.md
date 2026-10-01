@@ -8,6 +8,6 @@ For behavioral changes, use learning-loop, read its bundled evidence and promoti
 
 After approved source edits: `python3 sync.py manifest`, `python3 build.py`, `python3 check.py`. Bump VERSION for a release and regenerate packages. Include source, adapter, manifest and generated changes together. Do not claim installation or native activation from a successful build.
 
-Keep private project evidence and holdouts out of this reusable repository. Save evidence with the current task or authorized project; do not duplicate schedules or provision model APIs. Do not edit provider-owned skills.
+Keep private project evidence and holdouts out of this reusable repository. Save evidence with the current task or authorized project; do not duplicate schedules or provision model APIs. Do not edit provider-owned skills, including third-party plugins in `vendor/`; update them only from a reviewed upstream commit with `python3 vendor.py record`.
 
 After final documentation and generated-file changes, run `python3 bundle.py` and `python3 bundle.py --check` to refresh and verify the complete download before committing.

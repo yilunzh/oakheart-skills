@@ -27,6 +27,14 @@ cd oakheart-skills
 
 This private repository requires GitHub access. Both agents contribute here. Shared instructions live in `source/`; platform differences live in `adapters/`. Read [the contribution guide](./CONTRIBUTING.md) before making improvements.
 
+## Third-party plugin: Claude SEO
+
+The marketplace also offers `seo`, [AgriciDaniel's Claude SEO plugin](https://github.com/AgriciDaniel/claude-seo) (MIT). It adds `/seo audit <url>`, `/seo page`, `/seo technical`, `/seo schema`, `/seo geo`, `/seo local` and related skills and agents for Claude Code. It is not an Oakheart skill: `vendor/seo/` is a copy of upstream commit `ff87fce` (v2.4.1), minus tests, screenshots, installers and upstream contributor instructions. Its only change is the plugin name, because Claude rejects third-party plugin names that start with `claude-`. `vendor/manifest.json` records its hashes, and `python3 check.py` fails if the copy is edited.
+
+After organization sync, members enable it separately under **Customize → Plugins**. Without sync, load it with `claude --plugin-dir vendor/seo`. Its scripts need Python 3.10+; the first run installs `requirements.txt` into a private environment, and rendering also needs Playwright Chromium. It adds a PostToolUse hook that validates JSON-LD after each Edit or Write. Google, DataForSEO, Ahrefs and other API features need their own credentials. To audit a local dev server, set `CLAUDE_SEO_LOCAL_TARGETS=localhost:3000`.
+
+To update it, review the new upstream commit, replace `vendor/seo/` with that commit's copy using the same exclusions, reapply the change listed under `modified` in `vendor/manifest.json`, then run `python3 vendor.py record seo <commit>` and the checks below. Report problems upstream rather than patching the copy.
+
 ## Use in Codex CLI or IDE
 
 With Python 3 installed, run these commands from this repository:
@@ -122,6 +130,7 @@ GitHub Actions verifies reproducible packages and helper tests on pushes and pul
 | `adapters/` | Host-specific tools, storage and review instructions |
 | `dist/` | Generated Codex skills, Claude plugin and chat ZIPs |
 | `dist/release.json` | Shared version, build identity and package hashes |
+| `vendor/` | Pinned, unmodified third-party plugins and their recorded hashes |
 | `evaluations/` | Evaluation procedure; private evidence stays with its authorized project |
 
 ## Testing status

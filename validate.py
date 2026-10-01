@@ -47,7 +47,9 @@ def validate():
         assert data['version'] == (ROOT/'VERSION').read_text().strip()
     # Organization sync and `claude plugin marketplace add` read this file.
     market = json.loads((ROOT/'.claude-plugin/marketplace.json').read_text())
-    assert [e['name'] for e in market['plugins']] == [json.loads(p.read_text())['name'] for p in plugins]
+    from vendor import verify as verify_vendor
+    vendored = [e['name'] for e in verify_vendor()['plugins']]
+    assert [e['name'] for e in market['plugins']] == [json.loads(p.read_text())['name'] for p in plugins] + vendored
     for entry in market['plugins']:
         assert entry['source'].startswith('./') and 'version' not in entry
         assert (ROOT/entry['source']/'.claude-plugin/plugin.json').is_file()
@@ -68,6 +70,7 @@ def validate():
     report = {'source_files_hash_verified':verified,'generated_skill_folders':len(skills),
               'relative_links_verified':links,'individual_upload_archives':len(archives),
               'plugin_manifests_json_checked':1,
+              'vendored_plugins_hash_verified':len(vendored),
               'claude_cli_validation':'not_run_cli_unavailable',
               'claude_import_and_behavior':'not_tested',
               'real_project_parity':'pending_source_artifacts_and_claude_execution'}
