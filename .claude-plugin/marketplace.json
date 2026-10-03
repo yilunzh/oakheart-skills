@@ -11,6 +11,15 @@
       "name": "oakheart",
       "source": "./dist/oakheart",
       "description": "Copy review, sales pitch review, business strategy, software delivery, and learning-loop skills, plus a read-only artifact reviewer."
+    },
+    {
+      "name": "seo",
+      "source": "./vendor/seo",
+      "description": "Third-party Claude SEO plugin by AgriciDaniel (MIT), pinned in vendor/manifest.json. Technical, content, schema, Core Web Vitals, GEO and local SEO audits.",
+      "author": {
+        "name": "AgriciDaniel",
+        "url": "https://github.com/AgriciDaniel"
+      }
     }
   ]
 }
